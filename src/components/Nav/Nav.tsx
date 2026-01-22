@@ -17,6 +17,7 @@ export default function Nav() {
       { id: 'courses', label: 'Courses' },
       { id: 'Teaching', label: 'Teaching' },
       { id: 'faq', label: 'FAQ' },
+      { id: 'reviews', label: 'Reviews' },
       { id: 'contact', label: 'Contact' },
     ],
     [],

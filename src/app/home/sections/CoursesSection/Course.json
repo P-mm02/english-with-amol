@@ -11,9 +11,23 @@
     "subtitleTh": "คอร์สกลุ่มเล็ก สำหรับนักเรียน–วัยทำงาน",
     "subtitleEn": "Small-group course for students and working adults",
     "cover": {
-      "src": "/images/courses/Basic English Foundation Course.jpeg",
+      "src": "/images/courses/course-1.png",
       "alt": "English With Amol course cover"
     },
+    "gallery": [
+      {
+        "src": "/images/courses/course-1.png",
+        "alt": "English With Amol course image"
+      },
+      {
+        "src": "/images/courses/course-1.png",
+        "alt": "English With Amol course image"
+      },
+      {
+        "src": "/images/courses/course-1.png",
+        "alt": "English With Amol course image"
+      }
+    ],
     "summary": "คอร์สนี้ออกแบบมาสำหรับผู้เรียนที่ไม่มีพื้นฐานหรือพื้นฐานอ่อน เน้นสร้างความเข้าใจโครงสร้างภาษา และฝึกสนทนาได้จริงในชีวิตประจำวัน",
     "durationHours": 10,
     "durationLabel": "10 ชั่วโมง",
@@ -123,7 +137,6 @@
       "secondaryHrefTemplate": "/courses/{id}"
     }
   },
-
   {
     "id": "speaking-a2",
     "slug": "speaking-a2",
@@ -136,9 +149,23 @@
     "subtitleTh": "สำหรับผู้เริ่มต้น–มีพื้นฐานเล็กน้อย เน้นพูดให้กล้าและเป็นธรรมชาติ",
     "subtitleEn": "For beginners with a little foundation—build confidence and natural speaking",
     "cover": {
-      "src": "/images/hero/hero-english-with-amol.jpg",
+      "src": "/images/courses/course-2.png",
       "alt": "English With Amol course cover"
     },
+    "gallery": [
+      {
+        "src": "/images/courses/course-2.png",
+        "alt": "English With Amol course image"
+      },
+      {
+        "src": "/images/courses/course-2.png",
+        "alt": "English With Amol course image"
+      },
+      {
+        "src": "/images/courses/course-2.png",
+        "alt": "English With Amol course image"
+      }
+    ],
     "summary": "เหมาะสำหรับผู้ที่เข้าใจประโยคง่าย ๆ ได้แล้ว และต้องการฝึกพูดให้กล้า มั่นใจ และสื่อสารได้เป็นธรรมชาติขึ้น ไม่เน้นไวยากรณ์ซับซ้อน",
     "durationHours": 10,
     "durationLabel": "10 ชั่วโมง",
@@ -243,7 +270,6 @@
       "secondaryHrefTemplate": "/courses/{id}"
     }
   },
-
   {
     "id": "level-b1-intermediate",
     "slug": "level-b1-intermediate",
@@ -256,9 +282,23 @@
     "subtitleTh": "พูดคล่องขึ้น แสดงความเห็นชัดเจน และใช้ประโยคซับซ้อนขึ้น",
     "subtitleEn": "Speak more fluently, express clearer opinions, and use more complex sentences",
     "cover": {
-      "src": "/images/hero/hero-english-with-amol.jpg",
+      "src": "/images/courses/course-3.png",
       "alt": "English With Amol course cover"
     },
+    "gallery": [
+      {
+        "src": "/images/courses/course-3.png",
+        "alt": "English With Amol course image"
+      },
+      {
+        "src": "/images/courses/course-3.png",
+        "alt": "English With Amol course image"
+      },
+      {
+        "src": "/images/courses/course-3.png",
+        "alt": "English With Amol course image"
+      }
+    ],
     "summary": "เหมาะสำหรับผู้เรียนที่สื่อสารภาษาอังกฤษพื้นฐานได้แล้ว ต้องการพัฒนาให้พูดได้คล่องขึ้น แสดงความเห็นได้ชัดเจน และใช้ประโยคที่ซับซ้อนขึ้น เรียนเน้นใช้งานจริง ไม่ท่องจำ และเลือกหัวข้อที่สนใจได้",
     "durationHours": null,
     "durationLabel": "ปรับตามเป้าหมายผู้เรียน",
@@ -364,7 +404,6 @@
       "secondaryHrefTemplate": "/courses/{id}"
     }
   },
-
   {
     "id": "interview-english",
     "slug": "interview-english",
@@ -377,9 +416,23 @@
     "subtitleTh": "ฝึกตอบคำถามสัมภาษณ์งาน / สัมภาษณ์เรียนต่อ ให้ดูเป็นมืออาชีพ",
     "subtitleEn": "Job/Academic interview practice with professional phrasing",
     "cover": {
-      "src": "/images/hero/hero-english-with-amol.jpg",
+      "src": "/images/courses/course-4.png",
       "alt": "English With Amol course cover"
     },
+    "gallery": [
+      {
+        "src": "/images/courses/course-4.png",
+        "alt": "English With Amol course image"
+      },
+      {
+        "src": "/images/courses/course-4.png",
+        "alt": "English With Amol course image"
+      },
+      {
+        "src": "/images/courses/course-4.png",
+        "alt": "English With Amol course image"
+      }
+    ],
     "summary": "ฝึกตอบคำถามสัมภาษณ์งานและสัมภาษณ์เรียนต่อ ปรับประโยคให้ดูเป็นมืออาชีพ และมั่นใจมากขึ้น",
     "durationHours": null,
     "durationLabel": "ปรับตามเป้าหมายผู้เรียน",
@@ -437,7 +490,6 @@
       "secondaryHrefTemplate": "/courses/{id}"
     }
   },
-
   {
     "id": "presentation-english",
     "slug": "presentation-english",
@@ -450,9 +502,23 @@
     "subtitleTh": "สำหรับนักศึกษาและวัยทำงาน ฝึกนำเสนอให้ชัด น่าเชื่อถือ",
     "subtitleEn": "For students and professionals—clear, confident presentations",
     "cover": {
-      "src": "/images/hero/hero-english-with-amol.jpg",
+      "src": "/images/courses/course-5.png",
       "alt": "English With Amol course cover"
     },
+    "gallery": [
+      {
+        "src": "/images/courses/course-5.png",
+        "alt": "English With Amol course image"
+      },
+      {
+        "src": "/images/courses/course-5.png",
+        "alt": "English With Amol course image"
+      },
+      {
+        "src": "/images/courses/course-5.png",
+        "alt": "English With Amol course image"
+      }
+    ],
     "summary": "ฝึกการนำเสนอเป็นภาษาอังกฤษ เน้นการเรียบเรียงความคิด การพูดให้ชัด และน่าเชื่อถือ",
     "durationHours": null,
     "durationLabel": "ปรับตามหัวข้อ/งานที่ต้องพรีเซนต์",
@@ -510,7 +576,6 @@
       "secondaryHrefTemplate": "/courses/{id}"
     }
   },
-
   {
     "id": "english-mc",
     "slug": "english-mc",
@@ -523,9 +588,23 @@
     "subtitleTh": "ฝึกสคริปต์ น้ำเสียง และการรับมือหน้างาน",
     "subtitleEn": "Script, tone, and on-stage handling practice",
     "cover": {
-      "src": "/images/hero/hero-english-with-amol.jpg",
+      "src": "/images/courses/course-6.png",
       "alt": "English With Amol course cover"
     },
+    "gallery": [
+      {
+        "src": "/images/courses/course-6.png",
+        "alt": "English With Amol course image"
+      },
+      {
+        "src": "/images/courses/course-6.png",
+        "alt": "English With Amol course image"
+      },
+      {
+        "src": "/images/courses/course-6.png",
+        "alt": "English With Amol course image"
+      }
+    ],
     "summary": "สำหรับงานพิธีกรภาษาอังกฤษ ฝึกสคริปต์ การเชื่อมช่วงรายการ การประกาศบนเวที และการรับมือสถานการณ์หน้างาน",
     "durationHours": null,
     "durationLabel": "ปรับตามงานจริง",
@@ -583,7 +662,6 @@
       "secondaryHrefTemplate": "/courses/{id}"
     }
   },
-
   {
     "id": "english-interpreter",
     "slug": "english-interpreter",
@@ -596,9 +674,23 @@
     "subtitleTh": "ฝึกการฟัง จับใจความ และถ่ายทอดความหมายให้แม่น",
     "subtitleEn": "Listening, summarizing, and accurate delivery practice",
     "cover": {
-      "src": "/images/hero/hero-english-with-amol.jpg",
+      "src": "/images/courses/course-7.png",
       "alt": "English With Amol course cover"
     },
+    "gallery": [
+      {
+        "src": "/images/courses/course-7.png",
+        "alt": "English With Amol course image"
+      },
+      {
+        "src": "/images/courses/course-7.png",
+        "alt": "English With Amol course image"
+      },
+      {
+        "src": "/images/courses/course-7.png",
+        "alt": "English With Amol course image"
+      }
+    ],
     "summary": "สำหรับผู้ต้องการพัฒนาทักษะการเป็นล่าม ฝึกฟัง จับใจความ จดโน้ต และถ่ายทอดความหมายให้ชัดเจน (ปรับตามบริบทงานจริง)",
     "durationHours": null,
     "durationLabel": "ปรับตามงานจริง",

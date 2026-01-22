@@ -68,17 +68,13 @@
   font-family: var(--font-display);
   font-weight: 900;
   letter-spacing: -0.6px;
-  line-height: 1.05;
-  font-size: clamp(2rem, 3.8vw, 3rem);
-  margin-bottom: 0.75rem;
-}
-
-.h1Accent {
-  background: linear-gradient(180deg, rgba(225, 6, 44, 1), rgba(177, 0, 33, 1));
+  font-size: 2rem;
+  background: linear-gradient(180deg, rgb(255, 0, 43), rgba(148, 0, 27, 0.7));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
+
 
 .lead {
   color: var(--muted);
@@ -106,8 +102,8 @@
   width: 18px;
   height: 18px;
   border-radius: 999px;
-  border: 1px solid rgba(225, 6, 44, 0.32);
-  background: rgba(225, 6, 44, 0.1);
+  border: 1px solid rgba(6, 43, 225, 0.32);
+  background: rgba(6, 39, 225, 0.1);
   position: relative;
   margin-top: 0.12rem;
 }
@@ -115,12 +111,13 @@
 .check::after {
   content: "";
   position: absolute;
-  left: 5px;
-  top: 3px;
-  width: 6px;
-  height: 9px;
-  border-right: 2px solid rgba(255, 255, 255, 0.9);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+  right: 0;
+  bottom: 5px;
+  width: 8px;
+  height: 18px;
+  border-right: 3px solid rgba(255, 0, 0, 0.5);
+  border-bottom: 3px solid rgba(255, 0, 0, 0.5);
+  border-radius: 10%;
   transform: rotate(35deg);
 }
 
@@ -205,7 +202,7 @@
 
 .role {
   color: rgba(5, 10, 20, 0.86);
-  font-weight: 900;
+  font-weight: 600;
   margin-top: 0.08rem;
 }
 

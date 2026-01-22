@@ -28,7 +28,7 @@ export default function HeroSection() {
         <div className={styles.left}>
           <div className={styles.visual} aria-hidden="true">
             <Image
-              src="/images/hero/hero-english-with-amol.jpg"
+              src="/images/hero/hero-1.jpg"
               alt=""
               priority
               width={1200}
@@ -38,10 +38,7 @@ export default function HeroSection() {
             <div className={styles.visualFx} />
           </div>
 
-          <h1 className={styles.h1}>
-            พูดอังกฤษให้มั่นใจ —{' '}
-            <span className={styles.h1Accent}>step by step</span>.
-          </h1>
+          <h1 className={styles.h1}>พูดอังกฤษให้มั่นใจ</h1>
 
           <p className={styles.lead}>
             โครงสร้างชัดเจน โค้ชเป็นกันเอง และเน้นการพูดแบบใช้ได้จริง
@@ -161,7 +158,7 @@ export default function HeroSection() {
               <a className="btn btnPrimary" href="#contact">
                 ทักมาคุยเป้าหมาย
               </a>
-              <a className="btn" href="#courses">
+              <a className="btn btnBlue" href="#courses">
                 เลือกคอร์ส
               </a>
             </div>

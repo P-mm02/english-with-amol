@@ -9,6 +9,7 @@ import CoursesSection from './home/sections/CoursesSection/CoursesSection'
 import Teaching from './home/sections/Teaching/Teaching'
 import FaqSection from './home/sections/FaqSection/FaqSection'
 import ContactSection from './home/sections/ContactSection/ContactSection'
+import Reviews from './home/sections/Reviews/Reviews'
 
 type NavItem = { id: string; label: string }
 
@@ -19,6 +20,7 @@ export default function PageClient() {
       { id: 'courses', label: 'Courses' },
       { id: 'Teaching', label: 'Teaching' },
       { id: 'faq', label: 'FAQ' },
+      { id: 'reviews', label: 'Reviews' },
       { id: 'contact', label: 'Contact' },
     ],
     [],
@@ -63,6 +65,7 @@ export default function PageClient() {
       <CoursesSection />
       <Teaching />
       <FaqSection />
+      <Reviews />
       <ContactSection />
     </main>
   )

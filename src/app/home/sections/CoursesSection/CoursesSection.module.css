@@ -4,17 +4,19 @@
 
 .head {
   margin-bottom: 1.2rem;
+  text-align: center;
 }
 
 .h2 {
   font-family: var(--font-display);
   font-weight: 900;
   letter-spacing: -0.3px;
-  font-size: clamp(1.55rem, 2.4vw, 2rem);
+  font-size: 2rem;
+  color: var(--blue-strong);
 }
 
 .sub {
-  color: var(--muted);
+  color: var(--blue-strong);
   margin-top: 0.35rem;
   max-width: 72ch;
   line-height: 1.6;
@@ -82,7 +84,7 @@
 
 .title {
   font-weight: 900;
-  font-size: 1.12rem;
+  font-size: 1.4rem;
   letter-spacing: -0.2px;
   margin-bottom: 0.15rem;
 }

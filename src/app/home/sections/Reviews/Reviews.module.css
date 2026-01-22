@@ -1,0 +1,71 @@
+/* src/app/home/reviews/Reviews.module.css */
+
+.reviews {}
+
+.head {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.h2 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.3px;
+  font-size: 2rem;
+  color: var(--blue-strong);
+}
+
+.sub {
+  margin-top: 0.35rem;
+  line-height: 1.6;
+  max-width: 72ch;
+  color: var(--blue-strong);
+  opacity: 0.9;
+}
+
+.grid {
+  display: flex;  
+  gap: 0.85rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    flex-wrap: wrap;
+  }
+}
+
+.card {
+    padding: 0.6rem;
+  margin: 0;
+  border-radius: var(--r-lg);
+  overflow: scroll;
+  border: 1px solid var(--border-soft);
+  background: var(--card);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--t-fast), box-shadow var(--t-fast), border-color var(--t-fast);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(225, 6, 44, 0.22);
+  box-shadow: var(--shadow-md);
+}
+
+.media {
+  position: relative;
+  border-radius: var(--border-soft);
+  overflow: hidden;
+}
+
+.img {
+    max-width: 40rem;
+    width: 100%;
+    height: auto;
+  object-fit: contain;
+  object-position: center;
+}

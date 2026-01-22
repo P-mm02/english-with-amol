@@ -2,6 +2,29 @@
 import Image from 'next/image'
 import styles from './Teaching.module.css'
 
+const classroomRules = {
+  src: '/images/teaching/Classroom%20Rules.jpeg',
+  alt: 'Classroom rules',
+}
+
+const plans = [
+  {
+    src: '/images/teaching/Basic%20English%20Foundation%20Course.jpeg',
+    alt: 'Basic English Foundation Course teaching plan',
+    title: 'Basic Foundation',
+  },
+  {
+    src: '/images/teaching/Presentation%20Course.jpeg',
+    alt: 'Presentation Course teaching plan',
+    title: 'Presentation',
+  },
+  {
+    src: '/images/teaching/Interviews%20Course.jpeg',
+    alt: 'Interviews Course teaching plan',
+    title: 'Interviews',
+  },
+]
+
 export default function Teaching() {
   return (
     <section
@@ -11,91 +34,59 @@ export default function Teaching() {
     >
       <div className="container">
         <header className={styles.head}>
-          <h2 className={styles.h2}>ตัวอย่างการสอน</h2>
+          <h2 className={styles.h2}>การเรียน การสอน</h2>
           <p className={styles.sub}>
-            ตัวอย่างแบบง่ายและชัดเจนว่าเรียนกันยังไง (เหมาะสำหรับผู้ปกครอง, HR
-            หรือเพื่อความเข้าใจของคุณเอง)
+            ตัวอย่าง “กติกาในห้องเรียน” และ “แผนการสอน”
+            เพื่อให้เห็นภาพการเรียนจริงแบบชัดเจน
           </p>
         </header>
 
         <div className={styles.grid}>
-          {/* ✅ Image + mini caption */}
-          <div className={styles.visual} aria-hidden="true">
-            <div className={styles.visualMedia}>
-              <Image
-                src="/images/hero/hero-english-with-amol.jpg"
-                alt=""
-                priority={false}
-                width={800}
-                height={533}
-                className={styles.visualImg}
-              />
-              <div className={styles.visualFx} />
-            </div>
-
+          {/* LEFT: Classroom rules */}
+          <div className={styles.visual}>
             <div className={`glass ${styles.visualCaption}`}>
-              <p className={styles.capTitle}>ฝึกพูดจริง ได้ Feedback จริง</p>
-              <p className={styles.capSub}>เป็นขั้นสั้น ๆ ทำซ้ำได้ทุกวัน</p>
+              <p className={styles.capTitle}>Classroom Rules</p>
+              <p className={styles.capSub}>
+                กติกาชัดเจน เรียนสบายใจ และโฟกัสการฝึกพูดในคลาส
+              </p>
+              <div className={styles.visualMedia}>
+                <Image
+                  src={classroomRules.src}
+                  alt={classroomRules.alt}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 560px"
+                  className={styles.visualImg}
+                  priority={false}
+                />
+              </div>
             </div>
           </div>
 
-          {/* ✅ Content panel */}
+          {/* RIGHT: Teaching plan gallery */}
           <div className={`card ${styles.card}`}>
-            <h3 className={styles.h3}>แนวทางการเรียน</h3>
-
-            <div className={styles.steps}>
-              {[
-                {
-                  n: 1,
-                  t: 'เช็กระดับแบบเร็ว',
-                  d: 'ดูจุดเริ่มต้นของคุณก่อน',
-                },
-                {
-                  n: 2,
-                  t: 'ตั้งเป้าหมาย',
-                  d: 'Travel / work / interview / daily life',
-                },
-                { n: 3, t: 'Weekly plan', d: 'มีขั้นชัดเจนระหว่างแต่ละคลาส' },
-                {
-                  n: 4,
-                  t: 'Speak + Feedback',
-                  d: 'แก้ให้แบบจำได้และใช้ได้จริง',
-                },
-              ].map((s) => (
-                <div key={s.n} className={styles.step}>
-                  <div className={styles.n}>{s.n}</div>
-                  <div>
-                    <p className={styles.t}>{s.t}</p>
-                    <p className={styles.d}>{s.d}</p>
-                  </div>
-                </div>
-              ))}
+            <div className={styles.cardHead}>
+              <h3 className={styles.h3}>Teaching plan</h3>
+              <p className={styles.cardSub}>
+                ตัวอย่างแผนการสอนของแต่ละคอร์ส
+              </p>
             </div>
 
-            <div className={styles.divider} />
-
-            <h3 className={styles.h3}>สิ่งที่รวมในคอร์ส</h3>
-            <ul className={styles.list}>
-              {[
-                'เป้าหมายผู้เรียน + โครงแผนการเรียน (Goal + Plan)',
-                'ตารางเรียน + นโยบายเลื่อนคลาส (Reschedule policy)',
-                'เงื่อนไขการชำระเงิน (Payment terms) แบบง่ายและชัดเจน',
-                'ความเป็นส่วนตัว + ช่องทางการสื่อสาร (Privacy + Channel)',
-              ].map((t) => (
-                <li key={t} className={styles.li}>
-                  <span className={styles.check} aria-hidden="true" />
-                  {t}
-                </li>
+            <div className={styles.planGrid}>
+              {plans.map((p) => (
+                <figure key={p.src} className={styles.planCard}>
+                  <div className={styles.planMedia}>
+                    <Image
+                      src={p.src}
+                      alt={p.alt}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 360px"
+                      className={styles.planImg}
+                      priority={false}
+                    />
+                  </div>
+                  <figcaption className={styles.planCap}>{p.title}</figcaption>
+                </figure>
               ))}
-            </ul>
-
-            <div className={styles.btns}>
-              <button className="btn" type="button">
-                ดูตัวอย่าง
-              </button>
-              <button className="btn btnPrimary" type="button">
-                ดาวน์โหลด
-              </button>
             </div>
           </div>
         </div>
