@@ -28,7 +28,7 @@ export default function HeroSection() {
         <div className={styles.left}>
           <div className={styles.visual} aria-hidden="true">
             <Image
-              src="/images/hero/hero-1.jpg"
+              src="/images/hero/Hero-1.jpg"
               alt=""
               priority
               width={1200}
