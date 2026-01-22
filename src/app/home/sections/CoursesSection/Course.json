@@ -1,0 +1,659 @@
+[
+  {
+    "id": "basic-foundation",
+    "slug": "basic-foundation",
+    "isActive": true,
+    "category": "foundation",
+    "level": "Beginner",
+    "levelCEFR": "Pre-A1/A1",
+    "titleTh": "คอร์สปรับพื้นฐานภาษาอังกฤษ",
+    "titleEn": "Basic English Foundation Course",
+    "subtitleTh": "คอร์สกลุ่มเล็ก สำหรับนักเรียน–วัยทำงาน",
+    "subtitleEn": "Small-group course for students and working adults",
+    "cover": {
+      "src": "/images/courses/Basic English Foundation Course.jpeg",
+      "alt": "English With Amol course cover"
+    },
+    "summary": "คอร์สนี้ออกแบบมาสำหรับผู้เรียนที่ไม่มีพื้นฐานหรือพื้นฐานอ่อน เน้นสร้างความเข้าใจโครงสร้างภาษา และฝึกสนทนาได้จริงในชีวิตประจำวัน",
+    "durationHours": 10,
+    "durationLabel": "10 ชั่วโมง",
+    "format": {
+      "type": "online",
+      "labelTh": "ออนไลน์ผ่าน Google Meet",
+      "labelEn": "Online via Google Meet",
+      "platform": "Google Meet"
+    },
+    "classSize": {
+      "type": "small-group",
+      "labelTh": "กลุ่มเล็ก (4–5 คน)",
+      "min": 4,
+      "max": 5
+    },
+    "pricing": {
+      "currency": "THB",
+      "main": {
+        "labelTh": "ราคา",
+        "amount": 1500,
+        "display": "1,500 บาท"
+      },
+      "options": []
+    },
+    "whatYouGet": [
+      "เอกสารประกอบการเรียนทุกบทเรียน",
+      "Speaking drills จากสถานการณ์จริง",
+      "Feedback เพื่อพัฒนาได้ไวขึ้น",
+      "เน้นฝึกพูดจริง ใช้ได้จริง"
+    ],
+    "highlights": [
+      "เข้าใจโครงสร้างประโยคแบบเป็นระบบ",
+      "ฝึกพูดจากสถานการณ์จริง (Speaking drills)",
+      "เริ่มฝึกฟังจาก Audio สั้น ๆ",
+      "เหมาะกับผู้ไม่มีพื้นฐานหรือพื้นฐานอ่อน"
+    ],
+    "outlineTitleTh": "โครงสร้างคอร์สเรียน (Course Outline)",
+    "outline": [
+      {
+        "hour": "ชั่วโมงที่ 1",
+        "title": "Sentence Structure & Pronouns",
+        "bullets": [
+          "โครงสร้างประโยคพื้นฐาน",
+          "ประโยคเล่า และประโยคปฏิเสธ",
+          "การใช้ Pronouns อย่างถูกต้อง"
+        ]
+      },
+      {
+        "hour": "ชั่วโมงที่ 2–3",
+        "title": "Adjectives (คำคุณศัพท์)",
+        "bullets": [
+          "การขยายคำนาม",
+          "การใช้คำคุณศัพท์ในประโยคจริง",
+          "ฝึกแต่งประโยคจากสถานการณ์ใกล้ตัว"
+        ]
+      },
+      {
+        "hour": "ชั่วโมงที่ 4–5",
+        "title": "Basic Conversation",
+        "bullets": [
+          "การสร้างประโยคสนทนาตามหัวข้อพื้นฐาน",
+          "ฝึกพูดในสถานการณ์จริง เช่น การแนะนำตัว พูดคุยกับเพื่อน",
+          "เน้นความมั่นใจในการพูด"
+        ]
+      },
+      {
+        "hour": "ชั่วโมงที่ 6",
+        "title": "Wh- Questions",
+        "bullets": [
+          "การสร้างประโยคคำถาม",
+          "ฝึกถาม–ตอบจากสถานการณ์จริง",
+          "เริ่มฝึกฟังจาก Audio สั้น ๆ"
+        ]
+      },
+      {
+        "hour": "ชั่วโมงที่ 7–8",
+        "title": "Modal Verbs & Giving Advice",
+        "bullets": [
+          "การใช้คำแสดงความสามารถ ความจำเป็น",
+          "การให้คำแนะนำในชีวิตประจำวัน",
+          "ฝึกพูดแบบเป็นธรรมชาติ"
+        ]
+      },
+      {
+        "hour": "ชั่วโมงที่ 9",
+        "title": "Shopping Lesson & Listening Task",
+        "bullets": [
+          "คำศัพท์และประโยคที่ใช้ในการซื้อของ",
+          "ฝึกฟังจาก Audio",
+          "ฝึกสร้างบทสนทนาจากสถานการณ์จริง"
+        ]
+      },
+      {
+        "hour": "ชั่วโมงที่ 10",
+        "title": "Conjunctions & Daily Routines",
+        "bullets": [
+          "คำเชื่อมประโยค",
+          "การเล่าเรื่องกิจวัตรประจำวัน",
+          "ฝึกพูดเป็นพารากราฟสั้น ๆ"
+        ]
+      }
+    ],
+    "cta": {
+      "primaryTh": "เริ่มเลย",
+      "primaryHref": "#contact",
+      "secondaryTh": "ดูรายละเอียด",
+      "secondaryHrefTemplate": "/courses/{id}"
+    }
+  },
+
+  {
+    "id": "speaking-a2",
+    "slug": "speaking-a2",
+    "isActive": true,
+    "category": "level-based",
+    "level": "Speaking Class (A2)",
+    "levelCEFR": "A2",
+    "titleTh": "คอร์สพูดภาษาอังกฤษ (A2)",
+    "titleEn": "Speaking Class — A2",
+    "subtitleTh": "สำหรับผู้เริ่มต้น–มีพื้นฐานเล็กน้อย เน้นพูดให้กล้าและเป็นธรรมชาติ",
+    "subtitleEn": "For beginners with a little foundation—build confidence and natural speaking",
+    "cover": {
+      "src": "/images/hero/hero-english-with-amol.jpg",
+      "alt": "English With Amol course cover"
+    },
+    "summary": "เหมาะสำหรับผู้ที่เข้าใจประโยคง่าย ๆ ได้แล้ว และต้องการฝึกพูดให้กล้า มั่นใจ และสื่อสารได้เป็นธรรมชาติขึ้น ไม่เน้นไวยากรณ์ซับซ้อน",
+    "durationHours": 10,
+    "durationLabel": "10 ชั่วโมง",
+    "format": {
+      "type": "online",
+      "labelTh": "ออนไลน์ผ่าน Google Meet",
+      "labelEn": "Online via Google Meet",
+      "platform": "Google Meet"
+    },
+    "classSize": {
+      "type": "flex",
+      "labelTh": "กลุ่มเล็ก / เรียนเดี่ยว",
+      "min": 1,
+      "max": 5
+    },
+    "pricing": {
+      "currency": "THB",
+      "main": {
+        "labelTh": "กลุ่มเล็ก (4–5 คน)",
+        "amount": 1500,
+        "display": "1,500 บาท"
+      },
+      "options": [
+        {
+          "type": "private",
+          "labelTh": "เรียนเดี่ยว",
+          "amount": 2800,
+          "display": "2,800 บาท"
+        },
+        {
+          "type": "group-self",
+          "labelTh": "จับกลุ่มเอง (2 คนขึ้นไป) — ต่อคน",
+          "amount": 2000,
+          "display": "2,000 บาท/คน",
+          "minPeople": 2
+        }
+      ]
+    },
+    "whatYouGet": [
+      "เรียนตามระดับ A2",
+      "ปรับเนื้อหาให้เหมาะกับผู้เรียนแต่ละคน",
+      "เน้นการพูดจริง ไม่เน้นไวยากรณ์ซับซ้อน",
+      "มีเอกสารและกิจกรรมฝึกพูดให้ทุกคลาส"
+    ],
+    "highlights": [
+      "ฝึก Small talk / พูดเกี่ยวกับตัวเอง",
+      "ฝึกแสดงความคิดเห็นอย่างสุภาพ",
+      "ฝึกให้คำแนะนำแบบเป็นธรรมชาติ",
+      "ฝึกเล่าประสบการณ์ด้วย Past tense"
+    ],
+    "outlineTitleTh": "โครงสร้างคอร์สเรียน (A2 Course Outline)",
+    "outline": [
+      {
+        "hour": "1st – 2nd hour",
+        "title": "HOW TO MAKE A SMALL TALK (การคุยเล่น)",
+        "bullets": [
+          "เริ่มบทสนทนาแบบเป็นกันเอง",
+          "การทักทาย",
+          "หัวข้อปลอดภัยในการคุย (Safe topics)"
+        ]
+      },
+      {
+        "hour": "3rd – 4th hour",
+        "title": "TALKING ABOUT YOURSELF (พูดเกี่ยวกับตัวเอง)",
+        "bullets": [
+          "Personality traits",
+          "Feelings & moods",
+          "การอธิบายความรู้สึกของตัวเอง"
+        ]
+      },
+      {
+        "hour": "5th – 6th hour",
+        "title": "OPINIONS AND PREFERENCES (แสดงความคิดเห็น)",
+        "bullets": [
+          "การแสดงความคิดเห็นอย่างสุภาพ",
+          "Likes / Dislikes / Preferences",
+          "Agree & Disagree"
+        ]
+      },
+      {
+        "hour": "7th – 8th hour",
+        "title": "GIVING SUGGESTIONS & ADVICE (การให้คำแนะนำ)",
+        "bullets": [
+          "การใช้ modal verbs แบบง่าย",
+          "การให้คำแนะนำเรื่องสุขภาพ การเรียน ความสัมพันธ์",
+          "ฝึกพูดอย่างสุภาพและเป็นธรรมชาติ"
+        ]
+      },
+      {
+        "hour": "9th – 10th hour",
+        "title": "TALKING ABOUT EXPERIENCES (เล่าประสบการณ์)",
+        "bullets": [
+          "เล่าเหตุการณ์ในอดีตด้วย past tense",
+          "พูดเกี่ยวกับการท่องเที่ยว งานเลี้ยง และประสบการณ์ชีวิต"
+        ]
+      }
+    ],
+    "cta": {
+      "primaryTh": "เริ่มเลย",
+      "primaryHref": "#contact",
+      "secondaryTh": "ดูรายละเอียด",
+      "secondaryHrefTemplate": "/courses/{id}"
+    }
+  },
+
+  {
+    "id": "level-b1-intermediate",
+    "slug": "level-b1-intermediate",
+    "isActive": true,
+    "category": "level-based",
+    "level": "B1 — Intermediate",
+    "levelCEFR": "B1",
+    "titleTh": "เรียนตามระดับ B1 (Intermediate)",
+    "titleEn": "Level-based Learning — B1 (Intermediate)",
+    "subtitleTh": "พูดคล่องขึ้น แสดงความเห็นชัดเจน และใช้ประโยคซับซ้อนขึ้น",
+    "subtitleEn": "Speak more fluently, express clearer opinions, and use more complex sentences",
+    "cover": {
+      "src": "/images/hero/hero-english-with-amol.jpg",
+      "alt": "English With Amol course cover"
+    },
+    "summary": "เหมาะสำหรับผู้เรียนที่สื่อสารภาษาอังกฤษพื้นฐานได้แล้ว ต้องการพัฒนาให้พูดได้คล่องขึ้น แสดงความเห็นได้ชัดเจน และใช้ประโยคที่ซับซ้อนขึ้น เรียนเน้นใช้งานจริง ไม่ท่องจำ และเลือกหัวข้อที่สนใจได้",
+    "durationHours": null,
+    "durationLabel": "ปรับตามเป้าหมายผู้เรียน",
+    "format": {
+      "type": "online",
+      "labelTh": "ออนไลน์ผ่าน Google Meet",
+      "labelEn": "Online via Google Meet",
+      "platform": "Google Meet"
+    },
+    "classSize": {
+      "type": "flex",
+      "labelTh": "เรียนเดี่ยว หรือ กลุ่มเล็ก",
+      "min": 1,
+      "max": 5
+    },
+    "pricing": {
+      "currency": "THB",
+      "main": {
+        "labelTh": "ราคา",
+        "amount": null,
+        "display": "สอบถามราคา"
+      },
+      "options": []
+    },
+    "whatYouGet": [
+      "ปรับเนื้อหาให้เหมาะกับผู้เรียนแต่ละคน",
+      "เรียนได้ทั้งเรียนเดี่ยวหรือกลุ่มเล็ก",
+      "เน้นการใช้งานจริง ไม่ท่องจำ",
+      "เลือกเรียนตามเนื้อหาที่สนใจ"
+    ],
+    "highlights": [
+      "Perfect Tense + Topic-based speaking",
+      "Future Tense + Plan your future",
+      "Vocabulary + opinion practice",
+      "สร้างประโยคจากสถานการณ์จริง"
+    ],
+    "outlineTitleTh": "ตัวอย่างเนื้อหาหลัก (B1 Course Outline)",
+    "outline": [
+      {
+        "hour": "Unit",
+        "title": "Perfect Tense — Bucket List & Travel Journey",
+        "bullets": [
+          "Focus: Present Perfect / Present Perfect Continuous",
+          "Content: Talking about experiences, Bucket list, Travel journey & life experiences",
+          "Skills: เล่าเหตุการณ์ที่เคยเกิดขึ้น เปรียบเทียบประสบการณ์ ฝึกตั้งคำถาม–ตอบเกี่ยวกับประสบการณ์"
+        ]
+      },
+      {
+        "hour": "Unit",
+        "title": "Future Tense — Plan Your Future",
+        "bullets": [
+          "Focus: will / going to / present continuous (future meaning)",
+          "Content: Life plans, Career & study goals, Future expectations",
+          "Skills: พูดถึงแผนในอนาคต แสดงความตั้งใจและความหวัง ฝึกตอบคำถามเกี่ยวกับอนาคต"
+        ]
+      },
+      {
+        "hour": "Topic",
+        "title": "FESTIVAL (เทศกาล)",
+        "bullets": [
+          "Vocabulary เกี่ยวกับเทศกาล",
+          "การแสดงความคิดเห็นอย่างสุภาพและชัดเจน",
+          "ฝึกสร้างประโยคจากสถานการณ์จริง"
+        ]
+      },
+      {
+        "hour": "Topic",
+        "title": "SONGS & MUSIC (เพลงและดนตรี)",
+        "bullets": [
+          "Vocabulary",
+          "แสดงความเห็นและความชอบ",
+          "ฝึกการสนทนา (Making conversation)"
+        ]
+      },
+      {
+        "hour": "Topic",
+        "title": "IF CLAUSE (ประโยคเงื่อนไข)",
+        "bullets": ["Grammar: If Clause", "ฝึกแต่งประโยค และนำไปใช้ในบทสนทนา"]
+      },
+      {
+        "hour": "Topic",
+        "title": "STAY HEALTHY (สุขภาพที่ดี)",
+        "bullets": [
+          "Vocabulary เกี่ยวกับสุขภาพ",
+          "แสดงความเห็นและให้คำแนะนำ",
+          "ฝึกสร้างประโยคอย่างเป็นธรรมชาติ"
+        ]
+      },
+      {
+        "hour": "Topic",
+        "title": "NATURAL HAZARDS (ภัยธรรมชาติ)",
+        "bullets": [
+          "Vocabulary",
+          "การแสดงความคิดเห็นอย่างสุภาพ",
+          "ฝึกสร้างประโยคและอธิบายเหตุการณ์"
+        ]
+      }
+    ],
+    "cta": {
+      "primaryTh": "ติดต่อเพื่อประเมินระดับ",
+      "primaryHref": "#contact",
+      "secondaryTh": "ดูรายละเอียด",
+      "secondaryHrefTemplate": "/courses/{id}"
+    }
+  },
+
+  {
+    "id": "interview-english",
+    "slug": "interview-english",
+    "isActive": true,
+    "category": "career",
+    "level": "Interview",
+    "levelCEFR": "A2–B2",
+    "titleTh": "ภาษาอังกฤษเพื่อการสัมภาษณ์",
+    "titleEn": "Interview English",
+    "subtitleTh": "ฝึกตอบคำถามสัมภาษณ์งาน / สัมภาษณ์เรียนต่อ ให้ดูเป็นมืออาชีพ",
+    "subtitleEn": "Job/Academic interview practice with professional phrasing",
+    "cover": {
+      "src": "/images/hero/hero-english-with-amol.jpg",
+      "alt": "English With Amol course cover"
+    },
+    "summary": "ฝึกตอบคำถามสัมภาษณ์งานและสัมภาษณ์เรียนต่อ ปรับประโยคให้ดูเป็นมืออาชีพ และมั่นใจมากขึ้น",
+    "durationHours": null,
+    "durationLabel": "ปรับตามเป้าหมายผู้เรียน",
+    "format": {
+      "type": "online",
+      "labelTh": "ออนไลน์ผ่าน Google Meet",
+      "labelEn": "Online via Google Meet",
+      "platform": "Google Meet"
+    },
+    "classSize": {
+      "type": "flex",
+      "labelTh": "เรียนเดี่ยว หรือ กลุ่มเล็ก",
+      "min": 1,
+      "max": 5
+    },
+    "pricing": {
+      "currency": "THB",
+      "main": {
+        "labelTh": "ราคา",
+        "amount": null,
+        "display": "สอบถามราคา"
+      },
+      "options": []
+    },
+    "whatYouGet": [
+      "ฝึกตอบคำถามสัมภาษณ์งาน / เรียนต่อ",
+      "ปรับประโยคให้ดูเป็นมืออาชีพ",
+      "ซ้อมตอบ + Feedback เพื่อความมั่นใจ",
+      "ปรับเนื้อหาตามสายงาน/สาขาที่สมัคร"
+    ],
+    "highlights": [
+      "ตอบคำถามได้เป็นระบบ",
+      "โทนภาษาเป็นมืออาชีพ",
+      "ซ้อมสถานการณ์จริง",
+      "เพิ่มความมั่นใจก่อนสัมภาษณ์"
+    ],
+    "outlineTitleTh": "หัวข้อฝึกหลัก (ตัวอย่าง)",
+    "outline": [
+      {
+        "hour": "Module",
+        "title": "Interview Practice",
+        "bullets": [
+          "Tell me about yourself",
+          "Strengths / Weaknesses",
+          "Why this position/program?",
+          "Behavioral questions (STAR)",
+          "Mock interview + Feedback"
+        ]
+      }
+    ],
+    "cta": {
+      "primaryTh": "ขอประเมินและนัดซ้อม",
+      "primaryHref": "#contact",
+      "secondaryTh": "ดูรายละเอียด",
+      "secondaryHrefTemplate": "/courses/{id}"
+    }
+  },
+
+  {
+    "id": "presentation-english",
+    "slug": "presentation-english",
+    "isActive": true,
+    "category": "career",
+    "level": "Presentation",
+    "levelCEFR": "A2–B2",
+    "titleTh": "ภาษาอังกฤษสำหรับการพรีเซนต์",
+    "titleEn": "Presentation English",
+    "subtitleTh": "สำหรับนักศึกษาและวัยทำงาน ฝึกนำเสนอให้ชัด น่าเชื่อถือ",
+    "subtitleEn": "For students and professionals—clear, confident presentations",
+    "cover": {
+      "src": "/images/hero/hero-english-with-amol.jpg",
+      "alt": "English With Amol course cover"
+    },
+    "summary": "ฝึกการนำเสนอเป็นภาษาอังกฤษ เน้นการเรียบเรียงความคิด การพูดให้ชัด และน่าเชื่อถือ",
+    "durationHours": null,
+    "durationLabel": "ปรับตามหัวข้อ/งานที่ต้องพรีเซนต์",
+    "format": {
+      "type": "online",
+      "labelTh": "ออนไลน์ผ่าน Google Meet",
+      "labelEn": "Online via Google Meet",
+      "platform": "Google Meet"
+    },
+    "classSize": {
+      "type": "flex",
+      "labelTh": "เรียนเดี่ยว หรือ กลุ่มเล็ก",
+      "min": 1,
+      "max": 5
+    },
+    "pricing": {
+      "currency": "THB",
+      "main": {
+        "labelTh": "ราคา",
+        "amount": null,
+        "display": "สอบถามราคา"
+      },
+      "options": []
+    },
+    "whatYouGet": [
+      "โครงสร้างการพรีเซนต์ (Intro–Body–Close)",
+      "ฝึกพูดให้ชัด จังหวะดี น่าเชื่อถือ",
+      "คำเชื่อม + ประโยคสำคัญสำหรับพรีเซนต์",
+      "ซ้อมพรีเซนต์ + Feedback"
+    ],
+    "highlights": [
+      "จัดโครงเรื่องได้ชัด",
+      "พูดลื่นขึ้น มั่นใจขึ้น",
+      "เหมาะกับงานมหาลัยและงานออฟฟิศ",
+      "ใช้ได้กับสไลด์จริงของผู้เรียน"
+    ],
+    "outlineTitleTh": "หัวข้อฝึกหลัก (ตัวอย่าง)",
+    "outline": [
+      {
+        "hour": "Module",
+        "title": "Presentation Practice",
+        "bullets": [
+          "Hook & opening",
+          "Signposting (First/Next/Finally)",
+          "Explaining charts/data (if needed)",
+          "Handling Q&A",
+          "Rehearsal + Feedback"
+        ]
+      }
+    ],
+    "cta": {
+      "primaryTh": "ส่งหัวข้อที่ต้องพรีเซนต์",
+      "primaryHref": "#contact",
+      "secondaryTh": "ดูรายละเอียด",
+      "secondaryHrefTemplate": "/courses/{id}"
+    }
+  },
+
+  {
+    "id": "english-mc",
+    "slug": "english-mc",
+    "isActive": true,
+    "category": "specialist",
+    "level": "MC / Host",
+    "levelCEFR": "B1–C1",
+    "titleTh": "พิธีกรภาษาอังกฤษ",
+    "titleEn": "English MC / Host",
+    "subtitleTh": "ฝึกสคริปต์ น้ำเสียง และการรับมือหน้างาน",
+    "subtitleEn": "Script, tone, and on-stage handling practice",
+    "cover": {
+      "src": "/images/hero/hero-english-with-amol.jpg",
+      "alt": "English With Amol course cover"
+    },
+    "summary": "สำหรับงานพิธีกรภาษาอังกฤษ ฝึกสคริปต์ การเชื่อมช่วงรายการ การประกาศบนเวที และการรับมือสถานการณ์หน้างาน",
+    "durationHours": null,
+    "durationLabel": "ปรับตามงานจริง",
+    "format": {
+      "type": "online",
+      "labelTh": "ออนไลน์ผ่าน Google Meet",
+      "labelEn": "Online via Google Meet",
+      "platform": "Google Meet"
+    },
+    "classSize": {
+      "type": "private-preferred",
+      "labelTh": "แนะนำเรียนเดี่ยว (หรือกลุ่มเล็ก)",
+      "min": 1,
+      "max": 5
+    },
+    "pricing": {
+      "currency": "THB",
+      "main": {
+        "labelTh": "ราคา",
+        "amount": null,
+        "display": "สอบถามราคา"
+      },
+      "options": []
+    },
+    "whatYouGet": [
+      "ปรับสคริปต์ให้ลื่นและมืออาชีพ",
+      "ฝึกการเชื่อมช่วงรายการ",
+      "ฝึกน้ำเสียง จังหวะ และความมั่นใจ",
+      "ซ้อมสถานการณ์จริง + Feedback"
+    ],
+    "highlights": [
+      "สคริปต์พร้อมใช้",
+      "พูดบนเวทีได้มั่นใจขึ้น",
+      "รับมือ Q&A/เหตุไม่คาดคิดได้ดีขึ้น",
+      "โทนภาษาเป็นมืออาชีพ"
+    ],
+    "outlineTitleTh": "หัวข้อฝึกหลัก (ตัวอย่าง)",
+    "outline": [
+      {
+        "hour": "Module",
+        "title": "MC / Host Practice",
+        "bullets": [
+          "Opening / welcome script",
+          "Transitions (moving between segments)",
+          "Announcing agenda / speakers",
+          "Handling delays & unexpected changes",
+          "Rehearsal + Feedback"
+        ]
+      }
+    ],
+    "cta": {
+      "primaryTh": "ส่งรายละเอียดงาน",
+      "primaryHref": "#contact",
+      "secondaryTh": "ดูรายละเอียด",
+      "secondaryHrefTemplate": "/courses/{id}"
+    }
+  },
+
+  {
+    "id": "english-interpreter",
+    "slug": "english-interpreter",
+    "isActive": true,
+    "category": "specialist",
+    "level": "Interpreter",
+    "levelCEFR": "B2–C1",
+    "titleTh": "ล่ามภาษาอังกฤษ",
+    "titleEn": "English Interpreter",
+    "subtitleTh": "ฝึกการฟัง จับใจความ และถ่ายทอดความหมายให้แม่น",
+    "subtitleEn": "Listening, summarizing, and accurate delivery practice",
+    "cover": {
+      "src": "/images/hero/hero-english-with-amol.jpg",
+      "alt": "English With Amol course cover"
+    },
+    "summary": "สำหรับผู้ต้องการพัฒนาทักษะการเป็นล่าม ฝึกฟัง จับใจความ จดโน้ต และถ่ายทอดความหมายให้ชัดเจน (ปรับตามบริบทงานจริง)",
+    "durationHours": null,
+    "durationLabel": "ปรับตามงานจริง",
+    "format": {
+      "type": "online",
+      "labelTh": "ออนไลน์ผ่าน Google Meet",
+      "labelEn": "Online via Google Meet",
+      "platform": "Google Meet"
+    },
+    "classSize": {
+      "type": "private-preferred",
+      "labelTh": "แนะนำเรียนเดี่ยว (หรือกลุ่มเล็ก)",
+      "min": 1,
+      "max": 5
+    },
+    "pricing": {
+      "currency": "THB",
+      "main": {
+        "labelTh": "ราคา",
+        "amount": null,
+        "display": "สอบถามราคา"
+      },
+      "options": []
+    },
+    "whatYouGet": [
+      "ฝึก listening + note-taking",
+      "ฝึก paraphrase และสรุปใจความ",
+      "ฝึกถ่ายทอดความหมายให้แม่นยำ",
+      "ซ้อมสถานการณ์จริง + Feedback"
+    ],
+    "highlights": [
+      "จับใจความได้เร็วขึ้น",
+      "แปล/ถ่ายทอดได้เป็นธรรมชาติ",
+      "ลดการติดคำ เพิ่มความมั่นใจ",
+      "ปรับตามหัวข้อ/งานจริง"
+    ],
+    "outlineTitleTh": "หัวข้อฝึกหลัก (ตัวอย่าง)",
+    "outline": [
+      {
+        "hour": "Module",
+        "title": "Interpreting Practice",
+        "bullets": [
+          "Active listening drills",
+          "Chunking & note-taking",
+          "Shadowing & reformulation",
+          "Consecutive interpreting simulation",
+          "Feedback & improvement plan"
+        ]
+      }
+    ],
+    "cta": {
+      "primaryTh": "ส่งบริบทงานล่าม",
+      "primaryHref": "#contact",
+      "secondaryTh": "ดูรายละเอียด",
+      "secondaryHrefTemplate": "/courses/{id}"
+    }
+  }
+]

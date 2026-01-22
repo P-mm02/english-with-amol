@@ -4,6 +4,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation'
 import styles from './Nav.module.css'
 import ContactsBox from '@/components/ContactsBox/ContactsBox'
 
@@ -14,12 +15,15 @@ export default function Nav() {
     () => [
       { id: 'home', label: 'Home' },
       { id: 'courses', label: 'Courses' },
-      { id: 'TeachingExample', label: 'Example' },
+      { id: 'Teaching', label: 'Teaching' },
       { id: 'faq', label: 'FAQ' },
       { id: 'contact', label: 'Contact' },
     ],
-    []
+    [],
   )
+
+  const router = useRouter()
+  const pathname = usePathname()
 
   const [open, setOpen] = useState(false)
   const closeBtnRef = useRef<HTMLButtonElement | null>(null)
@@ -27,6 +31,16 @@ export default function Nav() {
   const jump = (id: string) => (e: React.MouseEvent) => {
     e.preventDefault()
     setOpen(false)
+
+    const isHome = pathname === '/'
+
+    if (!isHome) {
+      // go back to home with hash
+      router.push(`/#${id}`)
+      return
+    }
+
+    // already on home -> smooth scroll
     document
       .getElementById(id)
       ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -66,12 +80,10 @@ export default function Nav() {
 
   return (
     <>
-      {/* ✅ manual spacer = same height as --nav-h */}
       <div className={styles.navSpacer} aria-hidden="true" />
 
       <header className={styles.navWrap}>
         <div className={styles.nav}>
-          {/* Brand */}
           <Link
             href="/"
             className={styles.brand}
@@ -88,12 +100,11 @@ export default function Nav() {
             </div>
           </Link>
 
-          {/* Desktop links */}
           <nav className={styles.links} aria-label="Primary navigation">
             {links.map((l) => (
               <a
                 key={l.id}
-                href={`#${l.id}`}
+                href={`/#${l.id}`}
                 onClick={jump(l.id)}
                 className={styles.link}
               >
@@ -102,7 +113,6 @@ export default function Nav() {
             ))}
           </nav>
 
-          {/* Mobile button */}
           <button
             type="button"
             className={`${styles.burger} ${open ? styles.burgerOpen : ''}`}
@@ -118,7 +128,6 @@ export default function Nav() {
           </button>
         </div>
 
-        {/* ✅ Right drawer */}
         <aside
           id="mobileDrawer"
           className={`${styles.drawer} ${open ? styles.drawerOpen : ''}`}
@@ -128,7 +137,7 @@ export default function Nav() {
             {links.map((l) => (
               <a
                 key={l.id}
-                href={`#${l.id}`}
+                href={`/#${l.id}`}
                 onClick={jump(l.id)}
                 className={styles.drawerLink}
               >
@@ -139,7 +148,7 @@ export default function Nav() {
           </nav>
 
           <div className={styles.drawerFoot}>
-            <ContactsBox />{' '}
+            <ContactsBox />
           </div>
         </aside>
       </header>

@@ -1,13 +1,13 @@
-// src/app/home/sections/TeachingExample/TeachingExample.tsx
+// src/app/home/sections/Teaching/Teaching.tsx
 import Image from 'next/image'
-import styles from './TeachingExample.module.css'
+import styles from './Teaching.module.css'
 
-export default function TeachingExample() {
+export default function Teaching() {
   return (
     <section
-      id="TeachingExample"
-      className={`section ${styles.teachingExample}`}
-      aria-label="Teaching Example"
+      id="Teaching"
+      className={`section ${styles.Teaching}`}
+      aria-label="Teaching"
     >
       <div className="container">
         <header className={styles.head}>

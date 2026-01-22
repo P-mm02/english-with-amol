@@ -7,20 +7,27 @@ type ContactsBoxProps = {
   lineUrl?: string
   facebookUrl?: string
   fastworkUrl?: string
+  tiktokUrl?: string
+  instagramUrl?: string
   phone?: string
   className?: string
 }
 
 export default function ContactsBox({
   title = 'Quick contact',
-  lineUrl = 'https://lin.ee/hgKZAHm',
-  facebookUrl = 'https://www.facebook.com/profile.php?id=61580630981781',
-  fastworkUrl = 'https://fastwork.co/user/poomtawee',
-  phone = '0936661370',
+  lineUrl = 'https://lin.ee/GDDjHIv',
+  facebookUrl = 'https://www.facebook.com/profile.php?id=61551239586305',
+  tiktokUrl = 'https://www.tiktok.com/@amolnat',
+  instagramUrl = 'https://www.instagram.com/english_with_amol/',
+  phone = '0627790770',
   className = '',
 }: ContactsBoxProps) {
   return (
-    <div className={styles.contactBar} aria-label="Quick contact">
+    <div
+      className={`${styles.contactBar} ${className}`}
+      aria-label={title}
+      title={title}
+    >
       <a
         className={styles.contactIcon}
         href={lineUrl}
@@ -50,19 +57,24 @@ export default function ContactsBox({
 
       <a
         className={styles.contactIcon}
-        href={fastworkUrl}
+        href={instagramUrl}
         target="_blank"
         rel="noreferrer"
-        aria-label="Fastwork"
-        title="Fastwork"
+        aria-label="Instagram"
+        title="Instagram"
       >
-        {/* Change to /icons/Fastwork.svg if that's your real file */}
-        <Image
-          src="/icons/Fastwork.svg"
-          alt="Fastwork"
-          width={96}
-          height={96}
-        />
+        <Image src="/icons/IG.svg" alt="Instagram" width={96} height={96} />
+      </a>
+
+      <a
+        className={styles.contactIcon}
+        href={tiktokUrl}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="TikTok"
+        title="TikTok"
+      >
+        <Image src="/icons/TikTok.png" alt="TikTok" width={96} height={96} />
       </a>
 
       <a

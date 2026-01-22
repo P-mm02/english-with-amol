@@ -2,7 +2,7 @@
 import type { Metadata } from 'next'
 import PageClient from './pageClient'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://english-with-amol.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

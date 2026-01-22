@@ -5,7 +5,7 @@ import '@/styles/globals.css'
 import Nav from '@/components/Nav/Nav'
 import Footer from '@/components/Footer/Footer'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://english-with-amol.com'
 
 export const viewport: Viewport = {
   width: 'device-width',

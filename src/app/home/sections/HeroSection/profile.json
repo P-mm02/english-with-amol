@@ -1,0 +1,29 @@
+{
+  "name": "Amol",
+  "roleTh": "English Tutor • Coach",
+  "roleEn": "สอนภาษาอังกฤษแบบเป็นขั้นตอน เน้นพูดใช้งานจริง",
+  "avatar": {
+    "src": "/images/profile/profile.jpg",
+    "alt": "Amol, English Tutor and Coach"
+  },
+  "experience": "ประสบการณ์สอนมากกว่า ... ปี",
+  "services": [
+    "พิธีกรภาษาอังกฤษ (English MC)",
+    "ล่ามภาษาอังกฤษ (English Interpreter)",
+    "แปลเอกสารภาษาอังกฤษ"
+  ],
+  "focusTitleTh": "แนวทางการสอน",
+  "focus": [
+    { "label": "แนวทาง", "value": "Step-by-step" },
+    { "label": "โฟกัส", "value": "ทุกทักษะที่ใช้งานจริง" },
+    { "label": "แก้ไขจุดผิด", "value": "ให้คำแนะนำทันที" },
+    { "label": "การบ้าน", "value": "30 นาที/วัน" }
+  ],
+  "credentials": {
+    "title": "ประวัติการศึกษา",
+    "items": [
+      "ปริญญา: … (สาขา…) .....สถาบัน....",
+      "ใบรับรอง: … (เช่น TOEIC/IELTS/TEFL — ถ้ามี)"
+    ]
+  }
+}

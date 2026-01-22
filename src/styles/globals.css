@@ -2,7 +2,7 @@
 
 /* =========================
    English With Amol — Global Design Tokens
-   Natural + Red (Top-tier) — LIGHT MODE
+   White + Red + Blue (Higher contrast) — LIGHT MODE
    No library, CSS variables only
    ========================= */
 :root {
@@ -17,34 +17,39 @@
   --font-body: "Prompt", "Noto Sans Thai", system-ui, sans-serif;
 
   /* =========================
-     Core palette (natural + red) — light
+     Core palette — MORE contrast (cleaner separation)
      ========================= */
-  --bg: #fbfaf6;              /* paper */
-  --bg-2: #f3f1ea;            /* soft depth */
-  --panel: rgba(255, 255, 255, 0.72);
-  --card: rgba(255, 255, 255, 0.86);
-  --soft: rgba(20, 12, 18, 0.04);
+  --bg: #ffffff;              /* pure white */
+  --bg-2: #e9efff;            /* stronger cool depth */
+  --panel: rgba(255, 255, 255, 0.90);
+  --card: rgba(255, 255, 255, 0.98);
+  --soft: rgba(8, 14, 28, 0.06);
 
-  --text: rgba(14, 10, 16, 0.92);
-  --muted: rgba(14, 10, 16, 0.72);
+  --text: rgba(5, 10, 20, 0.95);
+  --muted: rgba(5, 10, 20, 0.70);
 
-  /* Brand red (natural, not neon) */
-  --accent: rgba(232, 48, 70, 0.96);        /* primary red */
-  --accent-strong: rgba(204, 22, 52, 0.98); /* deeper red */
-  --accent-soft: rgba(232, 48, 70, 0.12);   /* hover bg / chips */
+  /* Brand red (stronger) */
+  --accent: #e1062c;          /* vivid crimson */
+  --accent-strong: #b10021;   /* deep crimson */
+  --accent-soft: rgba(225, 6, 44, 0.16);
 
-  /* Natural “earth” highlight (optional) */
-  --leaf: rgba(28, 170, 120, 0.92);         /* mint/green */
-  --sun: rgba(220, 160, 70, 0.92);          /* warm */
+  /* Brand blue (stronger) */
+  --blue: #0a2a8a;            /* royal navy */
+  --blue-strong: #051a57;     /* deep navy */
+  --blue-soft: rgba(10, 42, 138, 0.16);
 
-  /* borders */
-  --border: rgba(14, 10, 16, 0.14);
-  --border-soft: rgba(14, 10, 16, 0.10);
+  /* optional highlights */
+  --leaf: rgba(20, 165, 125, 0.92);
+  --sun: rgba(240, 185, 90, 0.92);
 
-  /* shadows (lighter + cleaner) */
-  --shadow-lg: 0 24px 70px rgba(20, 16, 22, 0.12);
-  --shadow-md: 0 14px 44px rgba(20, 16, 22, 0.10);
-  --shadow-sm: 0 10px 24px rgba(20, 16, 22, 0.08);
+  /* borders (slightly stronger) */
+  --border: rgba(5, 10, 20, 0.18);
+  --border-soft: rgba(5, 10, 20, 0.12);
+
+  /* shadows (slightly stronger for separation on white) */
+  --shadow-lg: 0 28px 86px rgba(5, 10, 20, 0.16);
+  --shadow-md: 0 16px 52px rgba(5, 10, 20, 0.13);
+  --shadow-sm: 0 10px 26px rgba(5, 10, 20, 0.10);
 
   /* radius */
   --r-lg: 26px;
@@ -56,13 +61,13 @@
   --t-fast: 140ms ease;
   --t-med: 180ms ease;
 
-  /* focus */
-  --focus: 0 0 0 3px rgba(232, 48, 70, 0.22);
+  /* focus (more visible) */
+  --focus: 0 0 0 3px rgba(10, 42, 138, 0.28);
 
   /* status */
-  --ok: rgba(28, 170, 120, 0.92);
-  --warn: rgba(220, 160, 70, 0.92);
-  --bad: rgba(232, 48, 70, 0.90);
+  --ok: rgba(20, 165, 125, 0.92);
+  --warn: rgba(240, 185, 90, 0.92);
+  --bad: rgba(225, 6, 44, 0.92);
 
   --scroll-offset: 86px;
 }
@@ -112,18 +117,25 @@ body {
 body {
   background-color: var(--bg);
 
-  /* Premium LIGHT background (SVG + gradients) */
+  /* Stronger red/blue glow separation */
   background-image:
     url("/bg/paper-grain.svg"),
     url("/bg/waves-top.svg"),
     url("/bg/doodles-soft.svg"),
     url("/bg/waves-bottom.svg"),
-    radial-gradient(900px 360px at 16% 10%, rgba(232, 48, 70, 0.12), rgba(232, 48, 70, 0)),
-    radial-gradient(820px 420px at 84% 18%, rgba(220, 160, 70, 0.10), rgba(220, 160, 70, 0)),
-    radial-gradient(820px 520px at 50% 115%, rgba(28, 170, 120, 0.08), rgba(28, 170, 120, 0)),
-    linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 70%);
 
-  /* Each layer settings line up by index */
+    /* navy glow (stronger) */
+    radial-gradient(980px 380px at 16% 10%, rgba(10, 42, 138, 0.18), rgba(10, 42, 138, 0)),
+
+    /* red glow (stronger) */
+    radial-gradient(860px 440px at 86% 14%, rgba(225, 6, 44, 0.18), rgba(225, 6, 44, 0)),
+
+    /* bottom depth */
+    radial-gradient(900px 560px at 50% 118%, rgba(5, 26, 87, 0.12), rgba(5, 26, 87, 0)),
+
+    /* base wash (more contrast) */
+    linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 74%);
+
   background-repeat:
     repeat,
     no-repeat,
@@ -145,16 +157,15 @@ body {
     center;
 
   background-size:
-    700px auto,         /* paper grain density */
-    1600px auto,        /* top wave width */
-    1600px auto,        /* doodles */
-    1600px auto,        /* bottom wave */
+    700px auto,
+    1600px auto,
+    1600px auto,
+    1600px auto,
     auto,
     auto,
     auto,
     auto;
 
-  /* nicer scrolling on some GPUs */
   background-attachment:
     scroll,
     scroll,
@@ -228,29 +239,36 @@ select {
   padding: 0.72rem 1.05rem;
   border-radius: var(--r-pill);
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.92);
   box-shadow: var(--shadow-sm);
   cursor: pointer;
   transition: transform var(--t-fast), box-shadow var(--t-fast), border-color var(--t-fast), background var(--t-fast);
 }
 
-.btn:hover {
-  transform: translateY(-1px) scale(1.02);
-}
-
+.btn:hover { transform: translateY(-1px) scale(1.02); }
 .btn:focus-visible { outline: none; box-shadow: var(--shadow-sm), var(--focus); }
 
-/* primary red CTA */
+/* primary red CTA (more contrast) */
 .btnPrimary {
-  border-color: rgba(232, 48, 70, 0.32);
-  background: linear-gradient(180deg, rgba(232, 48, 70, 0.98), rgba(204, 22, 52, 0.98));
-  color: rgba(255, 255, 255);
+  border-color: rgba(225, 6, 44, 0.40);
+  background: linear-gradient(180deg, #ff1a49, #b10021);
+  color: #fff;
 }
 .btnPrimary:hover {
-  border-color: rgba(204, 22, 52, 0.42);
-  background: linear-gradient(180deg, rgba(204, 22, 52, 0.98), rgba(180, 10, 40, 0.98));
+  border-color: rgba(177, 0, 33, 0.55);
+  background: linear-gradient(180deg, #d10031, #8f001a);
 }
 
+/* optional: blue CTA (more contrast) */
+.btnBlue {
+  border-color: rgba(10, 42, 138, 0.36);
+  background: linear-gradient(180deg, #0a2a8a, #051a57);
+  color: #fff;
+}
+.btnBlue:hover {
+  border-color: rgba(5, 26, 87, 0.56);
+  background: linear-gradient(180deg, #07206b, #03123f);
+}
 
 /* =========================
    Utility classes (kept)

@@ -6,7 +6,7 @@ import styles from './page.module.css'
 
 import HeroSection from './home/sections/HeroSection/HeroSection'
 import CoursesSection from './home/sections/CoursesSection/CoursesSection'
-import TeachingExample from './home/sections/TeachingExample/TeachingExample'
+import Teaching from './home/sections/Teaching/Teaching'
 import FaqSection from './home/sections/FaqSection/FaqSection'
 import ContactSection from './home/sections/ContactSection/ContactSection'
 
@@ -17,11 +17,11 @@ export default function PageClient() {
     () => [
       { id: 'home', label: 'Home' },
       { id: 'courses', label: 'Courses' },
-      { id: 'TeachingExample', label: 'TeachingExample' },
+      { id: 'Teaching', label: 'Teaching' },
       { id: 'faq', label: 'FAQ' },
       { id: 'contact', label: 'Contact' },
     ],
-    []
+    [],
   )
 
   const [active, setActive] = useState(nav[0]?.id || 'home')
@@ -61,7 +61,7 @@ export default function PageClient() {
       {/* Sections */}
       <HeroSection />
       <CoursesSection />
-      <TeachingExample />
+      <Teaching />
       <FaqSection />
       <ContactSection />
     </main>

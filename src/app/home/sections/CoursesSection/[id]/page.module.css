@@ -1,0 +1,400 @@
+.page {
+  padding-top: 0;
+}
+
+.container {
+  padding-top: 0.25rem;
+}
+
+/* breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--muted);
+  margin-bottom: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.crumb {
+  font-weight: 900;
+  color: var(--blue);
+  border-bottom: 1px dashed rgba(10, 42, 138, 0.3);
+}
+
+.sep {
+  opacity: 0.7;
+}
+
+.current {
+  color: rgba(5, 10, 20, 0.9);
+  font-weight: 800;
+}
+
+/* hero */
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.heroMedia {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 6;
+}
+
+@media (max-width: 1024px) {
+  .heroMedia {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.heroImg {
+  object-fit: cover;
+}
+
+
+.heroContent {
+  position: relative;
+  padding: 1rem;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.6rem;
+}
+
+.level {
+  display: inline-flex;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(225, 6, 44, 0.22);
+  background: rgba(255, 255, 255, 0.92);
+  font-weight: 900;
+  color: var(--accent-strong);
+  box-shadow: var(--shadow-sm);
+}
+
+.cefr {
+  display: inline-flex;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(10, 42, 138, 0.22);
+  background: rgba(255, 255, 255, 0.92);
+  font-weight: 900;
+  color: var(--blue-strong);
+  box-shadow: var(--shadow-sm);
+}
+
+.h1 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.35px;
+  font-size: clamp(1.7rem, 2.7vw, 2.25rem);
+  margin-bottom: 0.2rem;
+}
+
+.h2 {
+  font-weight: 900;
+  color: var(--blue-strong);
+  margin-bottom: 0.45rem;
+}
+
+.sub {
+  color: rgba(5, 10, 20, 0.86);
+  font-weight: 800;
+  margin-bottom: 0.55rem;
+}
+
+.desc {
+  color: var(--muted);
+  line-height: 1.65;
+  max-width: 90ch;
+}
+
+.heroActions {
+  margin-top: 0.9rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+/* layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1.6fr 0.95fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main {
+  display: grid;
+  gap: 1rem;
+}
+
+.block {
+  padding: 1rem;
+}
+
+.blockTitle {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.25px;
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+/* info */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+@media (max-width: 560px) {
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.infoItem {
+  border-radius: var(--r-md);
+  border: 1px solid var(--border-soft);
+  background: var(--soft);
+  padding: 0.65rem 0.75rem;
+}
+
+.infoLabel {
+  display: block;
+  color: var(--muted);
+  font-weight: 800;
+  margin-bottom: 0.15rem;
+}
+
+.infoValue {
+  display: block;
+  color: rgba(5, 10, 20, 0.92);
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.infoValueStrong {
+  display: block;
+  color: var(--accent-strong);
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+/* price options */
+.priceOptions {
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border-soft);
+}
+
+.subTitle {
+  font-weight: 900;
+  color: rgba(5, 10, 20, 0.92);
+  margin-bottom: 0.5rem;
+}
+
+.optionList {
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.optionItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: baseline;
+  border-radius: var(--r-md);
+  border: 1px solid var(--border-soft);
+  background: rgba(255, 255, 255, 0.92);
+  padding: 0.6rem 0.75rem;
+}
+
+.optionLabel {
+  color: rgba(5, 10, 20, 0.9);
+  font-weight: 800;
+}
+
+.optionValue {
+  color: var(--accent-strong);
+  font-weight: 900;
+  text-align: right;
+}
+
+/* benefits */
+.twoCols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .twoCols {
+    grid-template-columns: 1fr;
+  }
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.li {
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  gap: 0.55rem;
+  align-items: start;
+  color: rgba(5, 10, 20, 0.9);
+}
+
+.dot,
+.dotBlue {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  margin-top: 0.4rem;
+}
+
+.dot {
+  background: rgba(225, 6, 44, 0.55);
+}
+
+.dotBlue {
+  background: rgba(10, 42, 138, 0.55);
+}
+
+/* outline */
+.outline {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.outlineItem {
+  border: 1px solid var(--border-soft);
+  border-radius: var(--r-md);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: var(--shadow-sm);
+  padding: 0.85rem;
+}
+
+.outHead {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.6rem;
+  align-items: baseline;
+  margin-bottom: 0.35rem;
+}
+
+.hour {
+  font-weight: 900;
+  color: var(--accent-strong);
+}
+
+.outTitle {
+  font-weight: 900;
+  color: rgba(5, 10, 20, 0.92);
+}
+
+.outList {
+  margin: 0;
+  padding-left: 1.05rem;
+  color: var(--muted);
+  display: grid;
+  gap: 0.28rem;
+  line-height: 1.6;
+}
+
+.outLi {
+  line-height: 1.6;
+}
+
+/* sidebar */
+.side {
+  position: relative;
+}
+
+.sticky {
+  padding: 1rem;
+  position: sticky;
+  top: calc(var(--scroll-offset) + 0.75rem);
+}
+
+@media (max-width: 1024px) {
+  .sticky {
+    position: relative;
+    top: auto;
+  }
+}
+
+.sideTitle {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.25px;
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.pills {
+  display: grid;
+  gap: 0.55rem;
+  margin-bottom: 0.85rem;
+}
+
+.pill {
+  border-radius: var(--r-md);
+  border: 1px solid var(--border-soft);
+  background: var(--soft);
+  padding: 0.65rem 0.75rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.pillLabel {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.pillValue {
+  color: rgba(5, 10, 20, 0.92);
+  font-weight: 900;
+  text-align: right;
+}
+
+.pillValueStrong {
+  color: var(--accent-strong);
+  font-weight: 900;
+  text-align: right;
+}
+
+.sideActions {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.note {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 0.95rem;
+}

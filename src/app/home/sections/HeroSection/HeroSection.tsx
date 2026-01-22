@@ -1,20 +1,38 @@
 // src/app/home/sections/HeroSection/HeroSection.tsx
 import Image from 'next/image'
 import styles from './HeroSection.module.css'
+import profileData from './profile.json'
+
+type Profile = {
+  name: string
+  roleTh: string
+  roleEn?: string
+  experience?: string
+  avatar: { src: string; alt: string }
+
+  services: string[]
+
+  focusTitleTh?: string
+  focus: { label: string; value: string }[]
+
+  credentials?: { title: string; items: string[] }
+}
+
+const PROFILE = profileData as Profile
 
 export default function HeroSection() {
   return (
     <section id="home" className={`section ${styles.hero}`} aria-label="Hero">
       <div className={`container ${styles.grid}`}>
-        <div>
-          {/* ✅ Hero image */}
+        {/* LEFT */}
+        <div className={styles.left}>
           <div className={styles.visual} aria-hidden="true">
             <Image
               src="/images/hero/hero-english-with-amol.jpg"
-              alt=""              
-              priority   
-              width={800}
-              height={533}           
+              alt=""
+              priority
+              width={1200}
+              height={800}
               className={styles.visualImg}
             />
             <div className={styles.visualFx} />
@@ -33,8 +51,8 @@ export default function HeroSection() {
           <ul className={styles.list} aria-label="Key benefits">
             <li className={styles.li}>
               <span className={styles.check} aria-hidden="true" />
-              แผนเรียนแบบ Personalized ตามเป้าหมายของคุณ (travel, work,
-              interview, daily life)
+              แผนเรียนแบบ Personalized ตามเป้าหมาย (travel, work, interview,
+              daily life)
             </li>
             <li className={styles.li}>
               <span className={styles.check} aria-hidden="true" />
@@ -46,6 +64,15 @@ export default function HeroSection() {
             </li>
           </ul>
 
+          <div className={styles.cta}>
+            <a className="btn btnPrimary" href="#courses">
+              ดูคอร์ส
+            </a>
+            <a className="btn btnBlue" href="#contact">
+              ติดต่อครูผู้สอน
+            </a>
+          </div>
+
           <div className={styles.proof} aria-label="Social proof">
             <div className={styles.proofCard}>
               <p className={styles.proofBig}>Structured</p>
@@ -55,49 +82,91 @@ export default function HeroSection() {
               <p className={styles.proofBig}>Friendly</p>
               <p className={styles.proofSmall}>ผิดได้ ไม่กดดัน</p>
             </div>
+            <div className={styles.proofCard}>
+              <p className={styles.proofBig}>Practical</p>
+              <p className={styles.proofSmall}>พูดได้จริง ใช้ได้จริง</p>
+            </div>
           </div>
         </div>
 
-        <div className={styles.right} aria-label="Tutor card">
+        {/* RIGHT */}
+        <aside className={styles.right} aria-label="Teacher profile">
           <div className={`card ${styles.card}`}>
             <div className={styles.top}>
-              <div className={styles.avatar} aria-hidden="true" />
-              <div>
-                <p className={styles.name}>Amol</p>
-                <p className={styles.role}>English Tutor • Coach</p>
+              <div className={styles.avatar}>
+                <Image
+                  src={PROFILE.avatar.src}
+                  alt={PROFILE.avatar.alt}
+                  width={128}
+                  height={128}
+                  className={styles.avatarImg}
+                />
+              </div>
+
+              <div className={styles.topText}>
+                <p className={styles.name}>{PROFILE.name}</p>
+                <p className={styles.role}>{PROFILE.roleTh}</p>
+                {PROFILE.experience ? (
+                  <p className={styles.exp}>{PROFILE.experience}</p>
+                ) : null}
               </div>
             </div>
 
-            <div className={styles.miniGrid}>
-              <div className={styles.mini}>
-                <p className={styles.miniLabel}>Focus</p>
-                <p className={styles.miniValue}>Speaking</p>
-              </div>
-              <div className={styles.mini}>
-                <p className={styles.miniLabel}>Style</p>
-                <p className={styles.miniValue}>Clear & kind</p>
-              </div>
-              <div className={styles.mini}>
-                <p className={styles.miniLabel}>Plan</p>
-                <p className={styles.miniValue}>Weekly steps</p>
-              </div>
-              <div className={styles.mini}>
-                <p className={styles.miniLabel}>Practice</p>
-                <p className={styles.miniValue}>10–15 min/day</p>
-              </div>
+            {PROFILE.roleEn ? (
+              <p className={styles.roleEn}>{PROFILE.roleEn}</p>
+            ) : null}
+
+            {PROFILE.focusTitleTh ? (
+              <p className={styles.sectionTitle}>{PROFILE.focusTitleTh}</p>
+            ) : null}
+
+            <div className={styles.miniGrid} aria-label="Teaching approach">
+              {PROFILE.focus.map((f) => (
+                <div key={f.label} className={styles.mini}>
+                  <p className={styles.miniLabel}>{f.label}</p>
+                  <p className={styles.miniValue}>{f.value}</p>
+                </div>
+              ))}
             </div>
 
-            <div className={styles.callout}>
-              <p className={styles.callTitle}>Quick progress formula</p>
-              <div className={styles.tags}>
-                <span className={styles.tag}>Speak</span>
-                <span className={styles.tag}>Feedback</span>
-                <span className={styles.tag}>Repeat</span>
-                <span className={styles.tag}>Confidence</span>
+            {PROFILE.credentials?.items?.length ? (
+              <div className={styles.credentials} aria-label="Credentials">
+                <p className={styles.sectionTitle}>
+                  {PROFILE.credentials.title}
+                </p>
+                <ul className={styles.credList}>
+                  {PROFILE.credentials.items.map((t) => (
+                    <li key={t} className={styles.credLi}>
+                      <span className={styles.dotRed} aria-hidden="true" />
+                      {t}
+                    </li>
+                  ))}
+                </ul>
               </div>
+            ) : null}
+
+            <div className={styles.services} aria-label="Services">
+              <p className={styles.sectionTitle}>บริการเพิ่มเติม</p>
+              <ul className={styles.servicesList}>
+                {PROFILE.services.map((s) => (
+                  <li key={s} className={styles.servicesLi}>
+                    <span className={styles.dotBlue} aria-hidden="true" />
+                    {s}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className={styles.cardCta}>
+              <a className="btn btnPrimary" href="#contact">
+                ทักมาคุยเป้าหมาย
+              </a>
+              <a className="btn" href="#courses">
+                เลือกคอร์ส
+              </a>
             </div>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
   )
