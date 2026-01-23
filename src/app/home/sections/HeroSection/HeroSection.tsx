@@ -3,6 +3,9 @@ import Image from 'next/image'
 import styles from './HeroSection.module.css'
 import profileData from './profile.json'
 
+import Slider from '@/components/Slider/Slider'
+import type { Slide } from '@/components/Slider/function'
+
 type Profile = {
   name: string
   roleTh: string
@@ -20,22 +23,49 @@ type Profile = {
 
 const PROFILE = profileData as Profile
 
+const HERO_SLIDES: Slide[] = [
+  {
+    src: '/images/hero/Hero-1.jpg',
+    alt: 'English With Amol hero image',
+    caption: 'English With Amol',
+    priority: true,
+  },
+  {
+    src: '/images/teaching/Basic English Foundation Course.jpeg',
+    alt: 'Basic English Foundation Course',
+    caption: 'Basic English Foundation Course',
+    priority: true,
+  },
+  {
+    src: '/images/teaching/Presentation Course.jpeg',
+    alt: 'Presentation Course',
+    caption: 'Presentation Course',
+    priority: true,
+  },
+  {
+    src: '/images/teaching/Interviews Course.jpeg',
+    alt: 'Interviews Course',
+    caption: 'Interviews Course',
+    priority: true,
+  },
+  // Add more when you have them (make sure files exist)
+  // { src: '/images/hero/Hero-2.jpg', alt: '...', caption: '...', priority: false },
+  // { src: '/images/hero/Hero-3.jpg', alt: '...', caption: '...', priority: false },
+]
+
 export default function HeroSection() {
   return (
     <section id="home" className={`section ${styles.hero}`} aria-label="Hero">
       <div className={`container ${styles.grid}`}>
         {/* LEFT */}
         <div className={styles.left}>
-          <div className={styles.visual} aria-hidden="true">
-            <Image
-              src="/images/hero/Hero-1.jpg"
-              alt=""
-              priority
-              width={1200}
-              height={800}
-              className={styles.visualImg}
+          <div className={styles.visual} aria-label="Hero images">
+            <Slider
+              slides={HERO_SLIDES}
+              ariaLabel="Hero image slider"
+              intervalMs={4500}
             />
-            <div className={styles.visualFx} />
+
           </div>
 
           <h1 className={styles.h1}>พูดอังกฤษให้มั่นใจ</h1>

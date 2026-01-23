@@ -128,9 +128,6 @@ export default function SliderView({
                       draggable={false}
                     />
                   </div>
-                  <figcaption className={styles.caption}>
-                    <span>{s.caption}</span>
-                  </figcaption>
                 </figure>
               </div>
             ))}
