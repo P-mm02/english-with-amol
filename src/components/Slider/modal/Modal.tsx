@@ -168,8 +168,8 @@ export default function Modal({
         </div>
 
         <div className={styles.hint}>
-          Tip: Press <kbd>Esc</kbd> to close, <kbd>←</kbd>/<kbd>→</kbd> to
-          navigate.
+          Tip: Press <kbd>Esc</kbd> to close, <kbd>{'<'}</kbd>/<kbd>{'>'}</kbd>{' '}
+          to navigate.
         </div>
       </div>
     </div>
