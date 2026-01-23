@@ -1,6 +1,7 @@
 /* src/app/contact/ContactsBox/ContactsBox.module.css */
 /* --- Contact icon bar (4 columns, full width) --- */
 .contactBar {
+  margin: 0 auto;
   max-width: 20rem;
   width: 100%;
   display: flex;
