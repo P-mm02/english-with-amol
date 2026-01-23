@@ -157,14 +157,15 @@ body {
     center;
 
   background-size:
-    700px auto,
-    1600px auto,
-    100%,
-    1600px auto,
-    auto,
-    auto,
-    auto,
-    auto;
+  700px auto,
+  max(100%, 1400px) auto,
+  100% auto,
+  max(100%, 1400px) auto,
+  auto,
+  auto,
+  auto,
+  auto;
+
 
   background-attachment:
     scroll,

@@ -1,10 +1,12 @@
 // src/app/home/sections/CoursesSection/[id]/page.tsx
 import fs from 'fs'
 import path from 'path'
-import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import styles from './page.module.css'
+
+import Slider from '@/components/Slider/Slider'
+import type { Slide } from '@/components/Slider/function'
 
 type OutlineItem = {
   hour: string
@@ -18,6 +20,12 @@ type PriceOption = {
   amount: number | null
   display: string
   minPeople?: number
+}
+
+type CourseImage = {
+  src: string
+  alt?: string
+  caption?: string
 }
 
 type Course = {
@@ -35,6 +43,8 @@ type Course = {
   subtitleEn?: string
 
   cover?: { src: string; alt?: string }
+  gallery?: CourseImage[] // ✅ added
+
   summary?: string
 
   durationHours?: number | null
@@ -110,7 +120,11 @@ export async function generateMetadata({ params }: PageProps) {
       course.format?.labelTh || ''
     }`.trim()
 
-  const ogImage = course.cover?.src || '/images/hero/hero-english-with-amol.jpg'
+  // prefer gallery[0], fallback cover, then fallback hero
+  const ogImage =
+    course.gallery?.[0]?.src ||
+    course.cover?.src ||
+    '/images/hero/hero-english-with-amol.jpg'
 
   return {
     title,
@@ -124,14 +138,30 @@ export async function generateMetadata({ params }: PageProps) {
   }
 }
 
+function buildCourseSlides(course: Course): Slide[] {
+  const fallbackCoverSrc =
+    course.cover?.src || '/images/hero/hero-english-with-amol.jpg'
+  const fallbackCoverAlt = course.cover?.alt || `${course.titleTh} cover`
+
+  const gallery = (course.gallery || []).filter((g) => Boolean(g?.src))
+
+  const images: CourseImage[] =
+    gallery.length > 0
+      ? gallery
+      : [{ src: fallbackCoverSrc, alt: fallbackCoverAlt }]
+
+  return images.map((img, idx) => ({
+    src: img.src,
+    alt: img.alt || `${course.titleTh} image ${idx + 1}`,
+    caption: img.caption || course.titleTh,
+    priority: idx === 0,
+  }))
+}
+
 export default async function CourseDetailPage({ params }: PageProps) {
   const { id } = await params
   const course = getCourseById(id)
   if (!course) notFound()
-
-  const coverSrc =
-    course.cover?.src || '/images/hero/hero-english-with-amol.jpg'
-  const coverAlt = course.cover?.alt || `${course.titleTh} cover`
 
   const priceMain = course.pricing?.main?.display || 'สอบถามราคา'
   const priceOptions = course.pricing?.options || []
@@ -143,6 +173,8 @@ export default async function CourseDetailPage({ params }: PageProps) {
   const whatYouGet = course.whatYouGet || []
   const highlights = course.highlights || []
   const outline = course.outline || []
+
+  const slides = buildCourseSlides(course)
 
   return (
     <main className={`section ${styles.page}`} aria-label="Course details">
@@ -158,16 +190,16 @@ export default async function CourseDetailPage({ params }: PageProps) {
         </nav>
 
         <header className={styles.hero} aria-label="Course header">
-          <div className={styles.heroMedia} aria-hidden="true">
-            <Image
-              src={coverSrc}
-              alt={coverAlt}
-              fill
-              sizes="(max-width: 1024px) 100vw, 1200px"
-              className={styles.heroImg}
-              priority
-            />
-            <div className={styles.heroOverlay} />
+          <div className={styles.heroMedia} aria-label="Course image gallery">
+            <div className={styles.heroSlider}>
+              <Slider
+                slides={slides}
+                ariaLabel={`${course.titleTh} image gallery`}
+                intervalMs={4500}
+              />
+            </div>
+
+            <div className={styles.heroOverlay} aria-hidden="true" />
           </div>
 
           <div className={styles.heroContent}>

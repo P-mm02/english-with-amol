@@ -2,6 +2,9 @@
 import Image from 'next/image'
 import styles from './Teaching.module.css'
 
+import Slider from '@/components/Slider/Slider'
+import type { Slide } from '@/components/Slider/function'
+
 const classroomRules = {
   src: '/images/teaching/Classroom%20Rules.jpeg',
   alt: 'Classroom rules',
@@ -24,6 +27,13 @@ const plans = [
     title: 'Interviews',
   },
 ]
+
+const PLAN_SLIDES: Slide[] = plans.map((p, idx) => ({
+  src: p.src,
+  alt: p.alt,
+  caption: p.title,
+  priority: idx === 0,
+}))
 
 export default function Teaching() {
   return (
@@ -49,6 +59,7 @@ export default function Teaching() {
               <p className={styles.capSub}>
                 กติกาชัดเจน เรียนสบายใจ และโฟกัสการฝึกพูดในคลาส
               </p>
+
               <div className={styles.visualMedia}>
                 <Image
                   src={classroomRules.src}
@@ -62,31 +73,22 @@ export default function Teaching() {
             </div>
           </div>
 
-          {/* RIGHT: Teaching plan gallery */}
+          {/* RIGHT: Teaching plan slider */}
           <div className={`card ${styles.card}`}>
             <div className={styles.cardHead}>
               <h3 className={styles.h3}>Teaching plan</h3>
-              <p className={styles.cardSub}>
-                ตัวอย่างแผนการสอนของแต่ละคอร์ส
-              </p>
+              <p className={styles.cardSub}>ตัวอย่างแผนการสอนของแต่ละคอร์ส</p>
             </div>
 
-            <div className={styles.planGrid}>
-              {plans.map((p) => (
-                <figure key={p.src} className={styles.planCard}>
-                  <div className={styles.planMedia}>
-                    <Image
-                      src={p.src}
-                      alt={p.alt}
-                      fill
-                      sizes="(max-width: 1024px) 100vw, 360px"
-                      className={styles.planImg}
-                      priority={false}
-                    />
-                  </div>
-                  <figcaption className={styles.planCap}>{p.title}</figcaption>
-                </figure>
-              ))}
+            <div
+              className={styles.planSlider}
+              aria-label="Teaching plan slider"
+            >
+              <Slider
+                slides={PLAN_SLIDES}
+                ariaLabel="Teaching plan slider"
+                intervalMs={4500}
+              />
             </div>
           </div>
         </div>

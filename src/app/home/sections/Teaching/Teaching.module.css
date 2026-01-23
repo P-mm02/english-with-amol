@@ -1,10 +1,14 @@
 /* src/app/home/sections/Teaching/Teaching.module.css */
 
-.head { 
+/* =========================
+   Header
+   ========================= */
+
+.head {
   margin-bottom: 1.2rem;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 
 .h2 {
@@ -16,28 +20,50 @@
 }
 
 .sub {
-  color: var(--muted);
   margin-top: 0.35rem;
   line-height: 1.6;
   max-width: 72ch;
   color: var(--blue-strong);
 }
 
+/* =========================
+   Layout
+   ========================= */
+
 .grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: top;  
   gap: 1rem;
+  
 }
 
 /* =========================
-   Left: Visual
+   Left: Classroom rules
    ========================= */
 
-.visual { 
+.visual {
   width: 100%;
-  max-width: 40rem;
- }
+}
+
+.visualCaption {
+  padding: 0.9rem;
+  text-align: center;
+}
+
+.capTitle {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--accent-strong);
+}
+
+.capSub {
+  margin-top: 0.2rem;
+  line-height: 1.55;
+  color: var(--accent-strong);
+}
 
 .visualMedia {
   position: relative;
@@ -53,42 +79,23 @@
 }
 
 .visualImg {
-  object-fit: contain; /* important: keep full image */
+  object-fit: contain; /* keep full image */
   object-position: center;
 }
 
-.visualCaption {
-  margin-top: 0.75rem;
-  padding: 0.9rem;
-  text-align: center;
-}
-
-.capTitle {
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: var(--accent-strong)
-}
-
-.capSub {
-  color: var(--muted);
-  margin-top: 0.2rem;
-  line-height: 1.55;
-  color: var(--accent-strong)
-}
-
 /* =========================
-   Right: Content card
+   Right: Teaching plan slider card
    ========================= */
 
-.card { 
-  padding: 1rem;
+.card {
+  padding: 1rem 1rem 0;
   width: 100%;
 }
 
-.cardHead { 
-  margin-bottom: 0.85rem; 
+.cardHead {
+  margin-bottom: 0.85rem;
   text-align: center;
-  color:var(--accent-strong)
+  color: var(--accent-strong);
 }
 
 .h3 {
@@ -101,54 +108,13 @@
   line-height: 1.6;
 }
 
-.planGrid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.75rem;
-}
-
-@media (max-width: 1024px) {
-  .card { 
-    max-width: 40rem;
-  }
-
-  .planGrid { grid-template-columns: 1fr; }
-}
-
-.planCard {
-  margin: 0;
-  border-radius: var(--r-md);
-  overflow: hidden;
-  border: 1px solid var(--border-soft);
-  background: var(--card);
-  box-shadow: var(--shadow-sm);
-  transition: transform var(--t-fast), box-shadow var(--t-fast), border-color var(--t-fast);
-}
-
-.planCard:hover {
-  transform: translateY(-2px);
-  border-color: rgba(225, 6, 44, 0.22);
-  box-shadow: var(--shadow-md);
-}
-
-.planMedia {
-  position: relative;
+.planSlider {
   width: 100%;
-  background: rgba(8, 14, 28, 0.03);
-
-  /* stable tile, image FIT inside (no crop) */
-  aspect-ratio: 16 / 10;
+  margin: 0 auto;
 }
 
-.planImg {
-  object-fit: contain; /* important */
-  object-position: center;
+@media screen and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
-
-.planCap {
-  padding: 0.6rem 0.7rem;
-  font-weight: 900;
-  letter-spacing: -0.2px;
-  text-align: center;
-}
-

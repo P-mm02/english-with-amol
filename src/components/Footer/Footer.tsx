@@ -28,10 +28,6 @@ export default function Footer() {
               />
             </div>
           </Link>
-
-          <p className={styles.brandSub}>
-            การสอนภาษาอังกฤษแบบเป็นระบบและเป็นกันเอง — ทีละขั้นตอน
-          </p>
         </div>
 
         <div className={styles.bottom}>

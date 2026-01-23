@@ -33,6 +33,7 @@
 
 /* hero */
 .hero {
+  padding: 1rem;
   position: relative;
   overflow: hidden;
   border-radius: var(--r-lg);
@@ -40,24 +41,35 @@
   box-shadow: var(--shadow-md);
   margin-bottom: 1rem;
   background: rgba(255, 255, 255, 0.92);
-}
-
-.heroMedia {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 6;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 @media (max-width: 1024px) {
-  .heroMedia {
-    aspect-ratio: 16 / 9;
+  .hero{
+    grid-template-columns: 1fr;
   }
 }
 
-.heroImg {
-  object-fit: cover;
+.heroMedia {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
 }
 
+.heroSlider {
+  inset: 0;
+}
+
+.heroSlider :global([class*="Slider-module__"][class*="__img"]) {
+  object-fit: cover ;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
 
 .heroContent {
   position: relative;
