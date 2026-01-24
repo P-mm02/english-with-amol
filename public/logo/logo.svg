@@ -12,7 +12,7 @@
     <style>
       .word { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; }
       .r1 { font-size: 36px; font-weight: 800; letter-spacing: 2.6px; opacity: .70; }
-      .r2 { font-size: 86px; font-weight: 900; letter-spacing: .5px; }
+      .r2 { font-size: 86px; font-weight: 600; letter-spacing: .5px; }
       .r3 { font-size: 36px; font-weight: 700; opacity: .68; }
     </style>
   </defs>

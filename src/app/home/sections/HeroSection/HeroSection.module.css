@@ -37,7 +37,7 @@
 
 .h1 {
   font-family: var(--font-display);
-  font-weight: 900;
+  font-weight: 600;
   font-size: 2rem;
 
   background: linear-gradient(180deg, rgba(21, 86, 214, 1), rgba(10, 42, 138, 0.85));
@@ -121,7 +121,7 @@
 }
 
 .proofBig {
-  font-weight: 900;
+  font-weight: 600;
   font-size: 1.05rem;
 }
 
@@ -168,7 +168,7 @@
 }
 
 .name {
-  font-weight: 900;
+  font-weight: 600;
   font-size: 1.05rem;
 }
 
@@ -181,7 +181,7 @@
 .exp {
   color: var(--muted);
   margin-top: 0.12rem;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 0.92rem;
 }
 
@@ -192,7 +192,7 @@
 }
 
 .sectionTitle {
-  font-weight: 900;
+  font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
@@ -214,11 +214,11 @@
 .miniLabel {
   color: var(--muted);
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .miniValue {
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 0.15rem;
 }
 

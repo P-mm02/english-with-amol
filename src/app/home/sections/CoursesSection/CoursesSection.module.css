@@ -9,7 +9,7 @@
 
 .h2 {
   font-family: var(--font-display);
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: -0.3px;
   font-size: 2rem;
   color: var(--blue-strong);
@@ -69,7 +69,7 @@
   border-radius: 999px;
   border: 1px solid rgba(225, 6, 44, 0.22);
   background: rgba(255, 255, 255, 0.92);
-  font-weight: 900;
+  font-weight: 600;
   color: var(--accent-strong);
   box-shadow: var(--shadow-sm);
 }
@@ -83,7 +83,7 @@
 }
 
 .title {
-  font-weight: 900;
+  font-weight: 600;
   font-size: 1.4rem;
   letter-spacing: -0.2px;
   margin-bottom: 0.15rem;
@@ -91,7 +91,7 @@
 
 .subtitle {
   color: var(--blue-strong);
-  font-weight: 900;
+  font-weight: 600;
   line-height: 1.35;
   margin-bottom: 0.45rem;
 }
@@ -120,7 +120,7 @@
   background: var(--soft);
   padding: 0.45rem 0.7rem;
   color: rgba(5, 10, 20, 0.86);
-  font-weight: 800;
+  font-weight: 400;
 }
 
 .bottom {
@@ -135,7 +135,7 @@
 }
 
 .price {
-  font-weight: 900;
+  font-weight: 600;
   color: var(--accent-strong);
 }
 

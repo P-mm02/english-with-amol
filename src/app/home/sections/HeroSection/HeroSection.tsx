@@ -68,7 +68,7 @@ export default function HeroSection() {
 
           </div>
 
-          <h1 className={styles.h1}>พูดอังกฤษให้มั่นใจ</h1>
+          <h1 className={styles.h1}>พูดภาษาอังกฤษให้มั่นใจ</h1>
 
           <p className={styles.lead}>
             โครงสร้างชัดเจน โค้ชเป็นกันเอง และเน้นการพูดแบบใช้ได้จริง
