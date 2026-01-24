@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;900&family=Prompt:wght@400;600;700;900&family=Noto+Sans+Thai:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@400;600;700&family=Playfair+Display:wght@600;900&family=Prompt:wght@400;600;700;900&family=Noto+Sans+Thai:wght@400;600;700;900&display=swap");
 
 /* =========================
    English With Amol — Global Design Tokens
-   White + Red + Blue (Higher contrast) — LIGHT MODE
+   Light Blue dominant — LIGHT MODE
    No library, CSS variables only
    ========================= */
 :root {
@@ -13,43 +13,44 @@
   --pad-x: 2rem;
 
   /* typography */
-  --font-display: "Playfair Display", "Prompt", "Noto Sans Thai", system-ui, sans-serif;
-  --font-body: "Prompt", "Noto Sans Thai", system-ui, sans-serif;
+  --font-display: "Mitr", system-ui, sans-serif;
+  --font-body: "Mitr", system-ui, sans-serif;
 
   /* =========================
-     Core palette — MORE contrast (cleaner separation)
+     Core palette — light blue dominant
+     (variable names unchanged)
      ========================= */
-  --bg: #ffffff;              /* pure white */
-  --bg-2: #e9efff;            /* stronger cool depth */
-  --panel: rgba(255, 255, 255, 0.90);
-  --card: rgba(255, 255, 255, 0.8);
-  --soft: rgba(8, 14, 28, 0.06);
+  --bg: #ffffff;              /* keep clean white */
+  --bg-2: #e6f2ff;            /* more light-blue depth */
+  --panel: rgba(255, 255, 255, 0.92);
+  --card: rgba(255, 255, 255, 0.84);
+  --soft: rgba(8, 14, 28, 0.055);
 
   --text: rgba(5, 10, 20, 0.95);
   --muted: rgba(5, 10, 20, 0.70);
 
-  /* Brand red (stronger) */
-  --accent: #e1062c;          /* vivid crimson */
-  --accent-strong: #b10021;   /* deep crimson */
-  --accent-soft: rgba(225, 6, 44, 0.16);
+  /* Brand red (keep strong, but let blue lead the page mood) */
+  --accent: #1556d6; 
+  --accent-strong: #0a2a8a; 
+  --accent-soft: rgba(21, 86, 214, 0.14); /* slightly calmer */
 
-  /* Brand blue (stronger) */
-  --blue: #0a2a8a;            /* royal navy */
-  --blue-strong: #051a57;     /* deep navy */
-  --blue-soft: rgba(10, 42, 138, 0.16);
+  /* Brand blue (slightly brighter for “light blue” vibe) */
+  --blue: #1556d6;            /* brighter royal */
+  --blue-strong: #0a2a8a;     /* keep deep navy */
+  --blue-soft: rgba(21, 86, 214, 0.14);
 
   /* optional highlights */
   --leaf: rgba(20, 165, 125, 0.92);
   --sun: rgba(240, 185, 90, 0.92);
 
-  /* borders (slightly stronger) */
-  --border: rgba(5, 10, 20, 0.18);
-  --border-soft: rgba(5, 10, 20, 0.12);
+  /* borders */
+  --border: rgba(5, 10, 20, 0.16);
+  --border-soft: rgba(5, 10, 20, 0.10);
 
-  /* shadows (slightly stronger for separation on white) */
-  --shadow-lg: 0 28px 86px rgba(5, 10, 20, 0.16);
-  --shadow-md: 0 16px 52px rgba(5, 10, 20, 0.13);
-  --shadow-sm: 0 10px 26px rgba(5, 10, 20, 0.10);
+  /* shadows */
+  --shadow-lg: 0 28px 86px rgba(5, 10, 20, 0.14);
+  --shadow-md: 0 16px 52px rgba(5, 10, 20, 0.11);
+  --shadow-sm: 0 10px 26px rgba(5, 10, 20, 0.09);
 
   /* radius */
   --r-lg: 26px;
@@ -61,8 +62,8 @@
   --t-fast: 140ms ease;
   --t-med: 180ms ease;
 
-  /* focus (more visible) */
-  --focus: 0 0 0 3px rgba(10, 42, 138, 0.28);
+  /* focus */
+  --focus: 0 0 0 3px rgba(21, 86, 214, 0.24);
 
   /* status */
   --ok: rgba(20, 165, 125, 0.92);
@@ -117,29 +118,37 @@ body {
 body {
   background-color: var(--bg);
 
-  /* Stronger red/blue glow separation */
+  /* Light-blue dominant atmosphere (keep your SVG images) */
   background-image:
     url("/bg/paper-grain.svg"),
     url("/bg/waves-top.svg"),
     url("/bg/doodles-soft.svg"),
     url("/bg/waves-bottom.svg"),
 
-    /* navy glow (stronger) */
-    radial-gradient(980px 380px at 16% 10%, rgba(10, 42, 138, 0.18), rgba(10, 42, 138, 0)),
+    /* sky glow (new, soft) */
+    radial-gradient(1100px 520px at 50% -6%, rgba(90, 170, 255, 0.20), rgba(90, 170, 255, 0)),
 
-    /* red glow (stronger) */
-    radial-gradient(860px 440px at 86% 14%, rgba(225, 6, 44, 0.18), rgba(225, 6, 44, 0)),
+    /* main blue glow (dominant) */
+    radial-gradient(980px 420px at 18% 14%, rgba(21, 86, 214, 0.20), rgba(21, 86, 214, 0)),
 
-    /* bottom depth */
-    radial-gradient(900px 560px at 50% 118%, rgba(5, 26, 87, 0.12), rgba(5, 26, 87, 0)),
+    /* secondary cyan-ish glow */
+    radial-gradient(920px 420px at 88% 16%, rgba(60, 190, 255, 0.16), rgba(60, 190, 255, 0)),
 
-    /* base wash (more contrast) */
+    /* tiny red highlight (keep brand but don’t dominate) */
+    radial-gradient(820px 440px at 86% 12%, rgba(225, 6, 44, 0.10), rgba(225, 6, 44, 0)),
+
+    /* bottom depth in blue/navy */
+    radial-gradient(900px 560px at 50% 118%, rgba(10, 42, 138, 0.10), rgba(10, 42, 138, 0)),
+
+    /* base wash */
     linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 74%);
 
   background-repeat:
     repeat,
     no-repeat,
     repeat,
+    no-repeat,
+    no-repeat,
     no-repeat,
     no-repeat,
     no-repeat,
@@ -153,21 +162,26 @@ body {
     center bottom,
     center top,
     center top,
+    center top,
+    center top,
     center bottom,
     center;
 
   background-size:
-  700px auto,
-  max(100%, 1400px) auto,
-  100% auto,
-  max(100%, 1400px) auto,
-  auto,
-  auto,
-  auto,
-  auto;
-
+    700px auto,
+    max(100%, 1400px) auto,
+    100% auto,
+    max(100%, 1400px) auto,
+    auto,
+    auto,
+    auto,
+    auto,
+    auto,
+    auto;
 
   background-attachment:
+    scroll,
+    scroll,
     scroll,
     scroll,
     scroll,
@@ -202,19 +216,16 @@ select {
    Optional: global “top-tier” primitives
    ========================= */
 
-/* container helper */
 .container {
   margin-inline: auto;
   padding-inline: var(--pad-x);
 }
 
-/* section spacing */
 .section {
   padding: 1rem 0;
   scroll-margin-top: var(--scroll-offset);
 }
 
-/* card */
 .card {
   border-radius: var(--r-lg);
   border: 1px solid var(--border-soft);
@@ -222,7 +233,6 @@ select {
   box-shadow: var(--shadow-md);
 }
 
-/* glass panel (for hero overlays / sticky CTA) */
 .glass {
   border-radius: var(--r-lg);
   border: 1px solid var(--border-soft);
@@ -231,7 +241,6 @@ select {
   backdrop-filter: blur(6px);
 }
 
-/* pill button base */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -249,7 +258,6 @@ select {
 .btn:hover { transform: translateY(-1px) scale(1.02); }
 .btn:focus-visible { outline: none; box-shadow: var(--shadow-sm), var(--focus); }
 
-/* primary red CTA (more contrast) */
 .btnPrimary {
   border-color: rgba(225, 6, 44, 0.40);
   background: linear-gradient(180deg, #ff1a49, #b10021);
@@ -260,15 +268,14 @@ select {
   background: linear-gradient(180deg, #d10031, #8f001a);
 }
 
-/* optional: blue CTA (more contrast) */
 .btnBlue {
-  border-color: rgba(10, 42, 138, 0.36);
-  background: linear-gradient(180deg, #0a2a8a, #051a57);
+  border-color: rgba(21, 86, 214, 0.32);
+  background: linear-gradient(180deg, var(--blue), var(--blue-strong));
   color: #fff;
 }
 .btnBlue:hover {
-  border-color: rgba(5, 26, 87, 0.56);
-  background: linear-gradient(180deg, #07206b, #03123f);
+  border-color: rgba(10, 42, 138, 0.52);
+  background: linear-gradient(180deg, #0f43b8, #051a57);
 }
 
 /* =========================
