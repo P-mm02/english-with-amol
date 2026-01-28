@@ -25,32 +25,17 @@ const PROFILE = profileData as Profile
 
 const HERO_SLIDES: Slide[] = [
   {
-    src: '/images/hero/Hero-1.jpg',
+    src: '/images/hero/hero-1.jpg',
     alt: 'English With Amol hero image',
     caption: 'English With Amol',
     priority: true,
   },
   {
-    src: '/images/teaching/Basic English Foundation Course.jpeg',
+    src: '/images/hero/hero-2.jpg',
     alt: 'Basic English Foundation Course',
     caption: 'Basic English Foundation Course',
     priority: true,
   },
-  {
-    src: '/images/teaching/Presentation Course.jpeg',
-    alt: 'Presentation Course',
-    caption: 'Presentation Course',
-    priority: true,
-  },
-  {
-    src: '/images/teaching/Interviews Course.jpeg',
-    alt: 'Interviews Course',
-    caption: 'Interviews Course',
-    priority: true,
-  },
-  // Add more when you have them (make sure files exist)
-  // { src: '/images/hero/Hero-2.jpg', alt: '...', caption: '...', priority: false },
-  // { src: '/images/hero/Hero-3.jpg', alt: '...', caption: '...', priority: false },
 ]
 
 export default function HeroSection() {
@@ -63,7 +48,7 @@ export default function HeroSection() {
             <Slider
               slides={HERO_SLIDES}
               ariaLabel="Hero image slider"
-              intervalMs={4500}
+              intervalMs={2000}
             />
 
           </div>
