@@ -25,15 +25,15 @@ const PROFILE = profileData as Profile
 
 const HERO_SLIDES: Slide[] = [
   {
-    src: '/images/hero/hero-1.jpg',
+    src: '/images/hero/hero-cover-1.jpg',
     alt: 'English With Amol hero image',
     caption: 'English With Amol',
     priority: true,
   },
   {
-    src: '/images/hero/hero-2.jpg',
-    alt: 'Basic English Foundation Course',
-    caption: 'Basic English Foundation Course',
+    src: '/images/hero/hero-cover-2.jpg',
+    alt: 'English With Amol hero image',
+    caption: 'English With Amol',
     priority: true,
   },
 ]
