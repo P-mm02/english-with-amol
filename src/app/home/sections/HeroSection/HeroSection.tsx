@@ -48,7 +48,7 @@ export default function HeroSection() {
             <Slider
               slides={HERO_SLIDES}
               ariaLabel="Hero image slider"
-              intervalMs={2000}
+              intervalMs={3000}
             />
 
           </div>
