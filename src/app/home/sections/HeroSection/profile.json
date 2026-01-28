@@ -6,7 +6,7 @@
     "src": "/images/profile/profile.JPG",
     "alt": "Amol, English Tutor and Coach"
   },
-  "experience": "ประสบการณ์สอนมากกว่า ... ปี",
+  "experience": "ประสบการณ์สอนมากกว่า 4 ปี",
   "services": [
     "พิธีกรภาษาอังกฤษ (English MC)",
     "ล่ามภาษาอังกฤษ (English Interpreter)",
@@ -22,8 +22,8 @@
   "credentials": {
     "title": "ประวัติการศึกษา",
     "items": [
-      "ปริญญา: … (สาขา…) .....สถาบัน....",
-      "ใบรับรอง: … (เช่น TOEIC/IELTS/TEFL — ถ้ามี)"
+      "ปริญญา: บริหารธุรกิจ ภาคภาษาอังกฤษ มอ.",
+      "ใบรับรอง: TOEIC / IELTS / TEFL"
     ]
   }
 }
