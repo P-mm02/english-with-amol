@@ -228,6 +228,12 @@
   margin-bottom: 0.85rem;
 }
 
+@media (max-width: 540px) {
+  .miniGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .mini {
   border-radius: 18px;
   border: 1px solid var(--border-soft);

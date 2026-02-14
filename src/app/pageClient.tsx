@@ -60,7 +60,6 @@ export default function PageClient() {
 
   return (
     <main className={styles.page}>
-      {/* Sections */}
       <HeroSection />
       <CoursesSection />
       <Teaching />

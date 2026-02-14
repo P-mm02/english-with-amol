@@ -56,7 +56,6 @@ export default function HeroSection() {
               ariaLabel="Hero image slider"
               intervalMs={3000}
             />
-
           </div>
 
           <h1 className={styles.h1}>พูดภาษาอังกฤษให้มั่นใจ</h1>
@@ -69,16 +68,19 @@ export default function HeroSection() {
           <ul className={styles.list} aria-label="Key benefits">
             <li className={styles.li}>
               <span className={styles.check} aria-hidden="true" />
-              แผนเรียนแบบ Personalized ตามเป้าหมาย (travel, work, interview,
-              daily life)
+              เน้น “ใช้ได้จริง” ไม่ใช่แค่ท่องจำ
             </li>
             <li className={styles.li}>
               <span className={styles.check} aria-hidden="true" />
-              ฝึกพูดจริง + แก้ให้ทันที (ไม่ใช่ worksheet น่าเบื่อ)
+              สอนเข้าใจง่าย มีโครงสร้างชัดเจน
             </li>
             <li className={styles.li}>
               <span className={styles.check} aria-hidden="true" />
-              ฝึกสั้น ๆ ทุกวัน ทำได้ต่อเนื่องจริง
+              ปรับเนื้อหาเฉพาะบุคคล
+            </li>
+            <li className={styles.li}>
+              <span className={styles.check} aria-hidden="true" />
+              สร้างความมั่นใจและ mindset ในการใช้ภาษาอังกฤษ
             </li>
           </ul>
 
@@ -131,7 +133,7 @@ export default function HeroSection() {
             </div>
 
             {PROFILE.roleEn ? (
-              <p className={styles.roleEn}>{PROFILE.roleEn}</p>
+              <p className={`${styles.roleEn} text-indent`}>{PROFILE.roleEn}</p>
             ) : null}
 
             {PROFILE.focusTitleTh ? (
