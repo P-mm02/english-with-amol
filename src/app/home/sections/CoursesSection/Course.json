@@ -1,12 +1,12 @@
 [
   {
-    "id": "basic-foundation",
-    "slug": "basic-foundation",
+    "id": "basic-foundation-a1",
+    "slug": "basic-foundation-a1",
     "isActive": true,
     "category": "foundation",
     "level": "Beginner",
     "levelCEFR": "Pre-A1/A1",
-    "titleTh": "คอร์สปรับพื้นฐานภาษาอังกฤษ",
+    "titleTh": "คอร์สปรับพื้นฐานภาษาอังกฤษ (A1)",
     "titleEn": "Basic English Foundation Course",
     "subtitleTh": "คอร์สกลุ่มเล็ก สำหรับนักเรียน–วัยทำงาน",
     "subtitleEn": "Small-group course for students and working adults",
@@ -16,16 +16,28 @@
     },
     "gallery": [
       {
-        "src": "/images/teaching/Basic English Foundation Course.jpeg",
+        "src": "/images/teaching/Basic English Foundation Course.jpg",
         "alt": "English With Amol course image"
       },
       {
-        "src": "/images/courses/course-1.png",
-        "alt": "English With Amol course image"
+        "src": "/images/courses/A1/ตัวอย่างการเรียน a1 เรื่อง กริยาช่วย _ สร้างบทสนทนา.png",
+        "alt": "ตัวอย่างการเรียน a1 เรื่อง กริยาช่วย _ สร้างบทสนทนา"
       },
       {
-        "src": "/images/courses/course-1.png",
-        "alt": "English With Amol course image"
+        "src": "/images/courses/A1/ตัวอย่างการเรียน a1 เรื่อง กริยาช่วย.png",
+        "alt": "ตัวอย่างการเรียน a1 เรื่อง กริยาช่วย"
+      },
+      {
+        "src": "/images/courses/A1/ตัวอย่างการเรียน a1 เรื่อง กริยาช่วย(1).png",
+        "alt": "ตัวอย่างการเรียน a1 เรื่อง กริยาช่วย(1)"
+      },
+      {
+        "src": "/images/courses/A1/ตัวอย่างการเรียน a1 เรื่อง กริยาช่วย(2).png",
+        "alt": "ตัวอย่างการเรียน a1 เรื่อง กริยาช่วย(2)"
+      },
+      {
+        "src": "/images/courses/A1/ตัวอย่างการเรียน a1 เรื่อง กริยาช่วย(3).png",
+        "alt": "ตัวอย่างการเรียน a1 เรื่อง กริยาช่วย(3)"
       }
     ],
     "summary": "คอร์สนี้ออกแบบมาสำหรับผู้เรียนที่ไม่มีพื้นฐานหรือพื้นฐานอ่อน เน้นสร้างความเข้าใจโครงสร้างภาษา และฝึกสนทนาได้จริงในชีวิตประจำวัน",
@@ -154,16 +166,36 @@
     },
     "gallery": [
       {
-        "src": "/images/courses/course-2.png",
-        "alt": "English With Amol course image"
+        "src": "/images/courses/A2/ตัวอย่างการเรียน a2 เรื่อง movie.png",
+        "alt": "ตัวอย่างการเรียน a2 เรื่อง movie"
       },
       {
-        "src": "/images/courses/course-2.png",
-        "alt": "English With Amol course image"
+        "src": "/images/courses/A2/ตัวอย่างการเรียน a2 เรื่อง movie คำศัพท์.png",
+        "alt": "ตัวอย่างการเรียน a2 เรื่อง movie คำศัพท์"
       },
       {
-        "src": "/images/courses/course-2.png",
-        "alt": "English With Amol course image"
+        "src": "/images/courses/A2/ตัวอย่างการเรียน a2 เรื่อง movie ตอบคำถาม.png",
+        "alt": "ตัวอย่างการเรียน a2 เรื่อง movie ตอบคำถาม"
+      },
+      {
+        "src": "/images/courses/A2/ตัวอย่างการเรียน a2 เรื่อง movie ตอบคำถามจากวิดีโอ.png",
+        "alt": "ตัวอย่างการเรียน a2 เรื่อง movie ตอบคำถามจากวิดีโอ"
+      },
+      {
+        "src": "/images/courses/A2/ตัวอย่างการเรียน a2 เรื่อง อนาคต.png",
+        "alt": "ตัวอย่างการเรียน a2 เรื่อง อนาคต"
+      },
+      {
+        "src": "/images/courses/A2/ตัวอย่างการเรียน a2 เรื่อง อนาคต _ เรียนคำศัพท์.png",
+        "alt": "ตัวอย่างการเรียน a2 เรื่อง อนาคต _ เรียนคำศัพท์"
+      },
+      {
+        "src": "/images/courses/A2/ตัวอย่างการเรียน a2 เรื่อง อนาคต _ วางแผนอนาคต ใช้คำศัพท์ และ โครงสร้างอย่างถูกต้อง.png",
+        "alt": "ตัวอย่างการเรียน a2 เรื่อง อนาคต _ วางแผนอนาคต ใช้คำศัพท์ และ โครงสร้างอย่างถูกต้อง"
+      },
+      {
+        "src": "/images/courses/A2/ตัวอย่างการเรียน a2 เรื่อง อนาคต เติมคำในช่องว่าง.png",
+        "alt": "ตัวอย่างการเรียน a2 เรื่อง อนาคต เติมคำในช่องว่าง"
       }
     ],
     "summary": "เหมาะสำหรับผู้ที่เข้าใจประโยคง่าย ๆ ได้แล้ว และต้องการฝึกพูดให้กล้า มั่นใจ และสื่อสารได้เป็นธรรมชาติขึ้น ไม่เน้นไวยากรณ์ซับซ้อน",
@@ -275,7 +307,7 @@
     "slug": "level-b1-intermediate",
     "isActive": true,
     "category": "level-based",
-    "level": "B1 — Intermediate",
+    "level": "Intermediate (B1)",
     "levelCEFR": "B1",
     "titleTh": "เรียนตามระดับ B1 (Intermediate)",
     "titleEn": "Level-based Learning — B1 (Intermediate)",
@@ -287,16 +319,16 @@
     },
     "gallery": [
       {
-        "src": "/images/courses/course-3.png",
-        "alt": "English With Amol course image"
+        "src": "/images/courses/B1/ตัวอย่างการเรียน b1 เรื่องAI.png",
+        "alt": "ตัวอย่างการเรียน b1 เรื่องAI"
       },
       {
-        "src": "/images/courses/course-3.png",
-        "alt": "English With Amol course image"
+        "src": "/images/courses/B1/ตัวอย่างการเรียน b1 เรื่องAI(1).png",
+        "alt": "ตัวอย่างการเรียน b1 เรื่องAI(1)"
       },
       {
-        "src": "/images/courses/course-3.png",
-        "alt": "English With Amol course image"
+        "src": "/images/courses/B1/ตัวอย่างการเรียน b1 เรื่องAI ตอบคำถามโดยใช้คำศัพท์ที่ให้.png",
+        "alt": "ตัวอย่างการเรียน b1 เรื่องAI ตอบคำถามโดยใช้คำศัพท์ที่ให้"
       }
     ],
     "summary": "เหมาะสำหรับผู้เรียนที่สื่อสารภาษาอังกฤษพื้นฐานได้แล้ว ต้องการพัฒนาให้พูดได้คล่องขึ้น แสดงความเห็นได้ชัดเจน และใช้ประโยคที่ซับซ้อนขึ้น เรียนเน้นใช้งานจริง ไม่ท่องจำ และเลือกหัวข้อที่สนใจได้",

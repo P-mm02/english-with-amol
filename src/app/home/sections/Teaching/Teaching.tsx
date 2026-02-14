@@ -12,17 +12,17 @@ const classroomRules = {
 
 const plans = [
   {
-    src: '/images/teaching/Basic%20English%20Foundation%20Course.jpeg',
+    src: '/images/teaching/Basic%20English%20Foundation%20Course.jpg',
     alt: 'Basic English Foundation Course teaching plan',
     title: 'Basic Foundation',
   },
   {
-    src: '/images/teaching/Presentation%20Course.jpeg',
+    src: '/images/teaching/Presentation%20Course.jpg',
     alt: 'Presentation Course teaching plan',
     title: 'Presentation',
   },
   {
-    src: '/images/teaching/Interviews%20Course.jpeg',
+    src: '/images/teaching/Interviews%20Course.jpg',
     alt: 'Interviews Course teaching plan',
     title: 'Interviews',
   },
