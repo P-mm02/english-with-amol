@@ -3,9 +3,6 @@ import Image from 'next/image'
 import styles from './HeroSection.module.css'
 import profileData from './profile.json'
 
-import Slider from '@/components/Slider/Slider'
-import type { Slide } from '@/components/Slider/function'
-
 type Profile = {
   name: string
   roleTh: string
@@ -23,27 +20,6 @@ type Profile = {
 
 const PROFILE = profileData as Profile
 
-const HERO_SLIDES: Slide[] = [
-  {
-    src: '/images/hero/amol-image-1.png',
-    alt: 'English With Amol hero image',
-    caption: 'English With Amol',
-    priority: true,
-  },
-  {
-    src: '/images/hero/amol-image-2.png',
-    alt: 'English With Amol hero image',
-    caption: 'English With Amol',
-    priority: true,
-  },
-  {
-    src: '/images/hero/amol-image-3.png',
-    alt: 'English With Amol hero image',
-    caption: 'English With Amol',
-    priority: true,
-  },
-]
-
 export default function HeroSection() {
   return (
     <section id="home" className={`section ${styles.hero}`} aria-label="Hero">
@@ -51,10 +27,13 @@ export default function HeroSection() {
         {/* LEFT */}
         <div className={styles.left}>
           <div className={styles.visual} aria-label="Hero images">
-            <Slider
-              slides={HERO_SLIDES}
-              ariaLabel="Hero image slider"
-              intervalMs={3000}
+            <Image
+              src="/images/hero/amol-image-0.png"
+              alt="English With Amol hero image"
+              fill
+              sizes="(max-width: 1024px) 100vw, 560px"
+              className={styles.visualImg}
+              priority={true}
             />
           </div>
 
