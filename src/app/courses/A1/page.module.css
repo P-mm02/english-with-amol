@@ -1,3 +1,8 @@
+/* src/app/home/sections/CoursesSection/A1/page.module.css */
+
+/* =========================
+   Page shell
+   ========================= */
 .page {
   padding-top: 0;
 }
@@ -6,14 +11,16 @@
   padding-top: 0.25rem;
 }
 
-/* breadcrumb */
+/* =========================
+   Breadcrumb
+   ========================= */
 .breadcrumb {
   display: flex;
   align-items: center;
   gap: 0.45rem;
-  color: var(--muted);
-  margin: 0.6rem 0;
   flex-wrap: wrap;
+  margin: 0.6rem 0;
+  color: var(--muted);
 }
 
 .crumb {
@@ -27,42 +34,48 @@
 }
 
 .current {
-  color: rgba(5, 10, 20, 0.9);
   font-weight: 600;
+  color: rgba(5, 10, 20, 0.9);
 }
 
-/* hero */
+/* =========================
+   Hero
+   ========================= */
 .hero {
-  padding: 1rem;
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--r-lg);
-  border: 1px solid var(--border-soft);
-  box-shadow: var(--shadow-md);
-  margin-bottom: 1rem;
-  background: rgba(255, 255, 255, 0.92);
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  position: relative;
+  overflow: hidden;
+
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border-soft);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow-md);
 }
 
 @media (max-width: 1024px) {
-  .hero{
+  .hero {
     grid-template-columns: 1fr;
   }
 }
 
 .heroMedia {
-  margin: 0 auto;
   position: relative;
   width: 100%;
+  margin: 0 auto;
 }
 
 .heroSlider {
   inset: 0;
 }
 
+/* ensure slider image behaves like a hero cover */
 .heroSlider :global([class*="Slider-module__"][class*="__img"]) {
-  object-fit: cover ;
+  object-fit: cover;
 }
 
 .heroOverlay {
@@ -85,24 +98,16 @@
 
 .level {
   display: inline-flex;
+  align-items: center;
   padding: 0.35rem 0.6rem;
+
   border-radius: 999px;
   border: 1px solid rgba(225, 6, 44, 0.22);
   background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow-sm);
+
   font-weight: 600;
   color: var(--accent-strong);
-  box-shadow: var(--shadow-sm);
-}
-
-.cefr {
-  display: inline-flex;
-  padding: 0.35rem 0.6rem;
-  border-radius: 999px;
-  border: 1px solid rgba(10, 42, 138, 0.22);
-  background: rgba(255, 255, 255, 0.92);
-  font-weight: 600;
-  color: var(--blue-strong);
-  box-shadow: var(--shadow-sm);
 }
 
 .h1 {
@@ -120,25 +125,27 @@
 }
 
 .sub {
-  color: rgba(5, 10, 20, 0.86);
   font-weight: 600;
-  margin-bottom: 0.55rem;
+  color: rgba(5, 10, 20, 0.86);
+  margin-bottom: 0.25rem;
 }
 
-.desc {
+.subMeta {
   color: var(--muted);
-  line-height: 1.65;
-  max-width: 90ch;
+  line-height: 1.55;
+  margin-top: 0.25rem;
 }
 
 .heroActions {
-  margin-top: 0.9rem;
   display: flex;
-  gap: 0.6rem;
   flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.9rem;
 }
 
-/* layout */
+/* =========================
+   Layout: main + sidebar
+   ========================= */
 .grid {
   display: grid;
   grid-template-columns: 1.6fr 0.95fr;
@@ -157,6 +164,7 @@
   gap: 1rem;
 }
 
+/* shared card padding */
 .block {
   padding: 1rem;
 }
@@ -165,11 +173,13 @@
   font-family: var(--font-display);
   font-weight: 600;
   letter-spacing: -0.25px;
-  font-size: 1.15rem;
+  font-size: 1.4rem;
   margin-bottom: 0.75rem;
 }
 
-/* info */
+/* =========================
+   Quick info
+   ========================= */
 .infoGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -183,136 +193,119 @@
 }
 
 .infoItem {
+  padding: 0.65rem 0.75rem;
   border-radius: var(--r-md);
   border: 1px solid var(--border-soft);
   background: var(--soft);
-  padding: 0.65rem 0.75rem;
 }
 
 .infoLabel {
   display: block;
-  color: var(--muted);
-  font-weight: 600;
   margin-bottom: 0.15rem;
+  font-weight: 600;
+  color: var(--muted);
 }
 
 .infoValue {
   display: block;
-  color: rgba(5, 10, 20, 0.92);
   font-weight: 400;
   line-height: 1.35;
+  color: rgba(5, 10, 20, 0.92);
 }
 
 .infoValueStrong {
   display: block;
-  color: var(--accent-strong);
   font-weight: 600;
   line-height: 1.35;
-}
-
-/* price options */
-.priceOptions {
-  margin-top: 0.85rem;
-  padding-top: 0.85rem;
-  border-top: 1px solid var(--border-soft);
-}
-
-.subTitle {
-  font-weight: 600;
-  color: rgba(5, 10, 20, 0.92);
-  margin-bottom: 0.5rem;
-}
-
-.optionList {
-  list-style: none;
-  display: grid;
-  gap: 0.5rem;
-}
-
-.optionItem {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.75rem;
-  align-items: baseline;
-  border-radius: var(--r-md);
-  border: 1px solid var(--border-soft);
-  background: rgba(255, 255, 255, 0.92);
-  padding: 0.6rem 0.75rem;
-}
-
-.optionLabel {
-  color: rgba(5, 10, 20, 0.9);
-  font-weight: 600;
-}
-
-.optionValue {
   color: var(--accent-strong);
+}
+
+/* =========================
+   Description layout
+   ========================= */
+.descHead {
+  margin-bottom: 0.85rem;
+}
+
+.descTitleEn {
+  font-family: var(--font-display);
   font-weight: 600;
-  text-align: right;
+  letter-spacing: -0.7px;
+  font-size: clamp(2rem, 3.6vw, 3.2rem);
+  line-height: 1.05;
+  color: var(--blue-strong);
 }
 
-/* benefits */
-.twoCols {
+.descTitleTh {
+  margin-top: 0.35rem;
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: #e0564e;
+}
+
+.descSection {
+  margin-top: 1.05rem;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  font-size: clamp(1.45rem, 2.1vw, 2rem);
+  margin: 1.1rem 0 0.55rem;
+  color: rgba(5, 10, 20, 0.96);
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 1.15rem;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 0.4rem;
+  line-height: 1.75;
+  color: rgba(5, 10, 20, 0.92);
 }
 
-@media (max-width: 900px) {
-  .twoCols {
-    grid-template-columns: 1fr;
-  }
+.bulletLi {
+  line-height: 1.75;
 }
 
-.list {
-  list-style: none;
-  display: grid;
-  gap: 0.55rem;
+.divider {
+  border: 0;
+  height: 1px;
+  margin: 1.2rem 0 1rem;
+  background: rgba(5, 10, 20, 0.18);
 }
 
-.li {
-  display: grid;
-  grid-template-columns: 10px 1fr;
-  gap: 0.55rem;
-  align-items: start;
-  color: rgba(5, 10, 20, 0.9);
+.pleaseNote {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  font-size: 1.25rem;
+  margin: 0 0 0.55rem;
+  color: rgba(5, 10, 20, 0.96);
 }
 
-.dot,
-.dotBlue {
-  width: 9px;
-  height: 9px;
-  border-radius: 999px;
-  margin-top: 0.4rem;
-}
-
-.dot {
-  background: rgba(225, 6, 44, 0.55);
-}
-
-.dotBlue {
-  background: rgba(10, 42, 138, 0.55);
-}
-
-/* outline */
+/* =========================
+   Outline
+   ========================= */
 .outline {
   display: grid;
   gap: 0.75rem;
 }
 
 .outlineItem {
-  border: 1px solid var(--border-soft);
+  padding: 0.85rem;
   border-radius: var(--r-md);
+  border: 1px solid var(--border-soft);
   background: rgba(255, 255, 255, 0.95);
   box-shadow: var(--shadow-sm);
-  padding: 0.85rem;
 }
 
 .outHead {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem 0.6rem;
   align-items: baseline;
+  gap: 0.45rem 0.6rem;
   margin-bottom: 0.35rem;
 }
 
@@ -329,17 +322,31 @@
 .outList {
   margin: 0;
   padding-left: 1.05rem;
-  color: var(--muted);
   display: grid;
   gap: 0.28rem;
   line-height: 1.6;
+  color: var(--muted);
 }
 
 .outLi {
   line-height: 1.6;
 }
 
-/* sidebar */
+.learnFormat {
+  margin-top: 1rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid var(--border-soft);
+}
+
+.subTitle {
+  font-weight: 600;
+  color: rgba(5, 10, 20, 0.92);
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   Sidebar
+   ========================= */
 .side {
   position: relative;
 }
@@ -372,31 +379,32 @@
 }
 
 .pill {
-  border-radius: var(--r-md);
-  border: 1px solid var(--border-soft);
-  background: var(--soft);
-  padding: 0.65rem 0.75rem;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 0.75rem;
+
+  padding: 0.65rem 0.75rem;
+  border-radius: var(--r-md);
+  border: 1px solid var(--border-soft);
+  background: var(--soft);
 }
 
 .pillLabel {
-  color: var(--muted);
   font-weight: 600;
+  color: var(--muted);
 }
 
 .pillValue {
-  color: rgba(5, 10, 20, 0.92);
   font-weight: 600;
   text-align: right;
+  color: rgba(5, 10, 20, 0.92);
 }
 
 .pillValueStrong {
-  color: var(--accent-strong);
   font-weight: 600;
   text-align: right;
+  color: var(--accent-strong);
 }
 
 .sideActions {
@@ -406,7 +414,7 @@
 
 .note {
   margin-top: 0.75rem;
-  color: var(--muted);
-  line-height: 1.55;
   font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--muted);
 }

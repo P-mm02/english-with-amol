@@ -1,0 +1,391 @@
+/* src/app/courses/A2/page.module.css */
+
+.page {
+  padding-top: 0;
+}
+
+.container {
+  padding-top: 0.25rem;
+}
+
+/* breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  margin: 0.6rem 0;
+  color: var(--muted);
+}
+
+.crumb {
+  font-weight: 600;
+  color: var(--blue);
+  border-bottom: 1px dashed rgba(10, 42, 138, 0.3);
+}
+
+.sep {
+  opacity: 0.8;
+}
+
+.current {
+  font-weight: 600;
+  color: rgba(5, 10, 20, 0.9);
+}
+
+/* hero */
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  position: relative;
+  overflow: hidden;
+
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border-soft);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+.heroMedia {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.heroSlider {
+  inset: 0;
+}
+
+.heroSlider :global([class*="Slider-module__"][class*="__img"]) {
+  object-fit: cover;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  padding: 1rem;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.6rem;
+}
+
+.level {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+
+  border: 1px solid rgba(10, 42, 138, 0.22);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow-sm);
+
+  font-weight: 600;
+  color: var(--blue-strong);
+}
+
+.h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.35px;
+  font-size: clamp(1.7rem, 2.7vw, 2.25rem);
+  margin-bottom: 0.2rem;
+}
+
+.h2 {
+  font-weight: 600;
+  color: rgba(5, 10, 20, 0.92);
+  margin-bottom: 0.5rem;
+}
+
+.heroMeta {
+  display: grid;
+  gap: 0.2rem;
+  margin-top: 0.25rem;
+}
+
+.sub {
+  font-weight: 600;
+  color: rgba(5, 10, 20, 0.86);
+}
+
+.subStrong {
+  font-weight: 800;
+  color: var(--accent-strong);
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.9rem;
+}
+
+/* layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1.6fr 0.95fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main {
+  display: grid;
+  gap: 1rem;
+}
+
+.block {
+  padding: 1rem;
+}
+
+.blockTitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.25px;
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+/* info */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+@media (max-width: 560px) {
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.infoItem {
+  padding: 0.65rem 0.75rem;
+  border-radius: var(--r-md);
+  border: 1px solid var(--border-soft);
+  background: var(--soft);
+}
+
+.infoLabel {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.infoValue {
+  display: block;
+  line-height: 1.35;
+  color: rgba(5, 10, 20, 0.92);
+}
+
+.infoValueStrong {
+  display: block;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--accent-strong);
+}
+
+/* description */
+.descHead {
+  margin-bottom: 0.85rem;
+}
+
+.descTitleEn {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.7px;
+  font-size: clamp(2rem, 3.6vw, 3.2rem);
+  line-height: 1.05;
+  color: var(--blue-strong);
+}
+
+.descTitleTh {
+  margin-top: 0.35rem;
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: #e0564e;
+}
+
+.descSection {
+  margin-top: 1.05rem;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  font-size: clamp(1.45rem, 2.1vw, 2rem);
+  margin: 1.1rem 0 0.55rem;
+  color: rgba(5, 10, 20, 0.96);
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 1.15rem;
+  display: grid;
+  gap: 0.4rem;
+  line-height: 1.75;
+  color: rgba(5, 10, 20, 0.92);
+}
+
+.bulletLi {
+  line-height: 1.75;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  margin: 1.2rem 0 1rem;
+  background: rgba(5, 10, 20, 0.18);
+}
+
+.pleaseNote {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  font-size: 1.25rem;
+  margin: 0 0 0.55rem;
+  color: rgba(5, 10, 20, 0.96);
+}
+
+/* outline */
+.outline {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.outlineItem {
+  padding: 0.85rem;
+  border-radius: var(--r-md);
+  border: 1px solid var(--border-soft);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: var(--shadow-sm);
+}
+
+.outHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem 0.6rem;
+  margin-bottom: 0.35rem;
+}
+
+.hour {
+  font-weight: 700;
+  color: var(--accent-strong);
+}
+
+.outTitle {
+  font-weight: 700;
+  color: rgba(5, 10, 20, 0.92);
+}
+
+.outList {
+  margin: 0;
+  padding-left: 1.05rem;
+  display: grid;
+  gap: 0.28rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.outLi {
+  line-height: 1.6;
+}
+
+/* sidebar */
+.side {
+  position: relative;
+}
+
+.sticky {
+  padding: 1rem;
+  position: sticky;
+  top: calc(var(--scroll-offset) + 0.75rem);
+}
+
+@media (max-width: 1024px) {
+  .sticky {
+    position: relative;
+    top: auto;
+  }
+}
+
+.sideTitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.25px;
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.pills {
+  display: grid;
+  gap: 0.55rem;
+  margin-bottom: 0.85rem;
+}
+
+.pill {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+
+  padding: 0.65rem 0.75rem;
+  border-radius: var(--r-md);
+  border: 1px solid var(--border-soft);
+  background: var(--soft);
+}
+
+.pillLabel {
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.pillValue {
+  font-weight: 700;
+  text-align: right;
+  color: rgba(5, 10, 20, 0.92);
+}
+
+.pillValueStrong {
+  font-weight: 800;
+  text-align: right;
+  color: var(--accent-strong);
+}
+
+.sideActions {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.note {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--muted);
+}

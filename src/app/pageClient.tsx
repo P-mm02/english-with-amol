@@ -6,10 +6,10 @@ import styles from './page.module.css'
 
 import HeroSection from './home/sections/HeroSection/HeroSection'
 import CoursesSection from './home/sections/CoursesSection/CoursesSection'
+import ServicesSection from './home/sections/servicesSection/servicesSection'
 import Teaching from './home/sections/Teaching/Teaching'
 import FaqSection from './home/sections/FaqSection/FaqSection'
 import ContactSection from './home/sections/ContactSection/ContactSection'
-import Reviews from './home/sections/Reviews/Reviews'
 
 type NavItem = { id: string; label: string }
 
@@ -62,9 +62,9 @@ export default function PageClient() {
     <main className={styles.page}>
       <HeroSection />
       <CoursesSection />
+      <ServicesSection />
       <Teaching />
       <FaqSection />
-      <Reviews />
       <ContactSection />
     </main>
   )
