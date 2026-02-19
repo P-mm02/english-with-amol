@@ -239,47 +239,71 @@
     "outlineTitleTh": "โครงสร้างคอร์สเรียน (A2 Course Outline)",
     "outline": [
       {
-        "hour": "1st – 2nd hour",
-        "title": "HOW TO MAKE A SMALL TALK (การคุยเล่น)",
+        "hour": "1st hour",
+        "title": "Personality",
         "bullets": [
-          "เริ่มบทสนทนาแบบเป็นกันเอง",
-          "การทักทาย",
-          "หัวข้อปลอดภัยในการคุย (Safe topics)"
+          "เรียนรู้คำศัพท์เกี่ยวกับบุคลิกภาพ และฝึกพูดแนะนำตัวให้คล่องขึ้น เพื่อสร้างความคุ้นเคยกับการใช้ภาษาอังกฤษ"
         ]
       },
       {
-        "hour": "3rd – 4th hour",
-        "title": "TALKING ABOUT YOURSELF (พูดเกี่ยวกับตัวเอง)",
+        "hour": "2nd hour",
+        "title": "Future Tense",
         "bullets": [
-          "Personality traits",
-          "Feelings & moods",
-          "การอธิบายความรู้สึกของตัวเอง"
+          "เรียนรู้โครงสร้าง Future (will / going to) และคำศัพท์เกี่ยวกับแผนในอนาคต ฝึกพูดเกี่ยวกับเป้าหมายและแผนชีวิต"
         ]
       },
       {
-        "hour": "5th – 6th hour",
-        "title": "OPINIONS AND PREFERENCES (แสดงความคิดเห็น)",
+        "hour": "3rd hour",
+        "title": "Movie Topic",
         "bullets": [
-          "การแสดงความคิดเห็นอย่างสุภาพ",
-          "Likes / Dislikes / Preferences",
-          "Agree & Disagree"
+          "เรียนรู้คำศัพท์ผ่านฉากสั้น ๆ จากภาพยนตร์ ฝึกฟังและสร้างประโยคจากสถานการณ์จริง"
         ]
       },
       {
-        "hour": "7th – 8th hour",
-        "title": "GIVING SUGGESTIONS & ADVICE (การให้คำแนะนำ)",
+        "hour": "4th hour",
+        "title": "Past Tense (Structure)",
+        "bullets": ["เรียนรู้โครงสร้าง Past Simple อย่างเป็นระบบ"]
+      },
+      {
+        "hour": "5th hour",
+        "title": "Past Tense (Speaking Practice)",
         "bullets": [
-          "การใช้ modal verbs แบบง่าย",
-          "การให้คำแนะนำเรื่องสุขภาพ การเรียน ความสัมพันธ์",
-          "ฝึกพูดอย่างสุภาพและเป็นธรรมชาติ"
+          "ฝึกพูดเล่าเหตุการณ์ในอดีต เพื่อเพิ่มความมั่นใจในการสื่อสาร"
         ]
       },
       {
-        "hour": "9th – 10th hour",
-        "title": "TALKING ABOUT EXPERIENCES (เล่าประสบการณ์)",
+        "hour": "6 hour",
+        "title": "Life Recommendation",
         "bullets": [
-          "เล่าเหตุการณ์ในอดีตด้วย past tense",
-          "พูดเกี่ยวกับการท่องเที่ยว งานเลี้ยง และประสบการณ์ชีวิต"
+          "เรียนรู้การใช้ Modal Verbs (should / shouldn’t / must) เพื่อให้คำแนะนำและแสดงความคิดเห็น"
+        ]
+      },
+      {
+        "hour": "7th hour",
+        "title": "Another / Other",
+        "bullets": [
+          "เรียนรู้การใช้ another / other / others พร้อมคำศัพท์ในหัวข้อ “Friendship”"
+        ]
+      },
+      {
+        "hour": "8th hour",
+        "title": " Present Perfect",
+        "bullets": [
+          "เรียนรู้โครงสร้าง Present Perfect และการพูดเกี่ยวกับประสบการณ์ ความสำเร็จ และเป้าหมาย"
+        ]
+      },
+      {
+        "hour": "9th hour",
+        "title": "Comparison",
+        "bullets": [
+          "เรียนรู้ Comparative และ Superlative เพื่อเปรียบเทียบสิ่งต่าง ๆ อย่างถูกต้อง"
+        ]
+      },
+      {
+        "hour": "10th hour",
+        "title": "Recap",
+        "bullets": [
+          "ทบทวนโครงสร้างและคำศัพท์ทั้งหมด พร้อมฝึกบทสนทนา"
         ]
       }
     ],
@@ -291,16 +315,16 @@
     }
   },
   {
-    "id": "level-b1-intermediate",
-    "slug": "level-b1-intermediate",
+    "id": "level-b1-b2-intermediate-upper",
+    "slug": "level-b1-b2-intermediate-upper",
     "isActive": true,
     "category": "level-based",
-    "level": "Intermediate (B1)",
-    "levelCEFR": "B1",
-    "titleTh": "เรียนตามระดับ B1 (Intermediate)",
-    "titleEn": "Level-based Learning — B1 (Intermediate)",
-    "subtitleTh": "พูดคล่องขึ้น แสดงความเห็นชัดเจน และใช้ประโยคซับซ้อนขึ้น",
-    "subtitleEn": "Speak more fluently, express clearer opinions, and use more complex sentences",
+    "level": "Intermediate to Upper-Intermediate (B1–B2)",
+    "levelCEFR": "B1–B2",
+    "titleTh": "เรียนตามระดับ B1–B2 (Intermediate to Upper-Intermediate)",
+    "titleEn": "Level-based Learning — B1–B2 (Intermediate to Upper-Intermediate)",
+    "subtitleTh": "ยกระดับการสื่อสารเชิงลึก วิเคราะห์ประเด็นสังคม และอภิปรายเชิงวิชาการได้อย่างมั่นใจ",
+    "subtitleEn": "Build deeper communication, analyze social issues, and discuss academic topics with confidence",
     "cover": {
       "src": "/images/courses/course-3.png",
       "alt": "English With Amol course cover"
@@ -319,7 +343,7 @@
         "alt": "ตัวอย่างการเรียน b1 เรื่องAI ตอบคำถามโดยใช้คำศัพท์ที่ให้"
       }
     ],
-    "summary": "เหมาะสำหรับผู้เรียนที่สื่อสารภาษาอังกฤษพื้นฐานได้แล้ว ต้องการพัฒนาให้พูดได้คล่องขึ้น แสดงความเห็นได้ชัดเจน และใช้ประโยคที่ซับซ้อนขึ้น เรียนเน้นใช้งานจริง ไม่ท่องจำ และเลือกหัวข้อที่สนใจได้",
+    "summary": "คอร์สระดับ B1–B2 ออกแบบเพื่อพัฒนาทักษะการสื่อสารเชิงลึก ให้ผู้เรียนสามารถแสดงความคิดเห็น วิเคราะห์ประเด็นสังคม และอภิปรายหัวข้อเชิงวิชาการได้อย่างมั่นใจ พัฒนา Grammar ระดับกลาง–สูง, Advanced Vocabulary, Critical Thinking และทักษะ Discussion / Debate อย่างเป็นระบบ เพื่อเตรียมความพร้อมสู่ระดับ B2 รวมถึงการใช้ภาษาอังกฤษในบริบทการเรียนต่อและการทำงานระดับสากล",
     "durationHours": null,
     "durationLabel": "ปรับตามเป้าหมายผู้เรียน",
     "format": {
@@ -343,77 +367,117 @@
       },
       "options": []
     },
+    "whoItsFor": [
+      "ผู้ที่สื่อสารได้ในระดับทั่วไป แต่ต้องการยกระดับภาษาให้ลึกและเป็นมืออาชีพมากขึ้น",
+      "ผู้ที่ต้องการพัฒนาสู่ระดับ B2 หรือ Upper-Intermediate",
+      "นักเรียน / นักศึกษาที่ต้องใช้ภาษาอังกฤษเชิงวิชาการ",
+      "ผู้ที่เตรียมเรียนต่อ หรือทำงานในองค์กรต่างประเทศ",
+      "คนทำงานที่ต้องใช้ภาษาอังกฤษในการวิเคราะห์ อภิปราย หรือพรีเซนต์งาน"
+    ],
     "whatYouGet": [
-      "ปรับเนื้อหาให้เหมาะกับผู้เรียนแต่ละคน",
-      "เรียนได้ทั้งเรียนเดี่ยวหรือกลุ่มเล็ก",
-      "เน้นการใช้งานจริง ไม่ท่องจำ",
-      "เลือกเรียนตามเนื้อหาที่สนใจ"
+      "สไลด์การสอนครบทุกบทเรียน",
+      "Discussion Framework และโครงสร้างประโยคขั้นกลาง–สูง",
+      "Debate & Speaking Practice ทุกคลาส",
+      "เทคนิคการให้เหตุผล การยกตัวอย่าง และการอธิบายอย่างเป็นระบบ",
+      "คำศัพท์เชิงวิชาการและคำศัพท์ที่ใช้ในบริบทสากล"
     ],
     "highlights": [
-      "Perfect Tense + Topic-based speaking",
-      "Future Tense + Plan your future",
-      "Vocabulary + opinion practice",
-      "สร้างประโยคจากสถานการณ์จริง"
+      "Intermediate–Advanced Grammar (B1–B2)",
+      "Advanced Vocabulary + Academic contexts",
+      "Critical Thinking + Opinion vs Facts",
+      "Discussion / Debate framework every class",
+      "Prepare for study abroad, and global workplace"
     ],
-    "outlineTitleTh": "ตัวอย่างเนื้อหาหลัก (B1 Course Outline)",
+    "outlineTitleTh": "โครงสร้างคอร์สเรียน (B1–B2 Course Outline)",
     "outline": [
       {
-        "hour": "Unit",
-        "title": "Perfect Tense — Bucket List & Travel Journey",
+        "hour": "1st hour",
+        "title": "Present Perfect",
         "bullets": [
-          "Focus: Present Perfect / Present Perfect Continuous",
-          "Content: Talking about experiences, Bucket list, Travel journey & life experiences",
-          "Skills: เล่าเหตุการณ์ที่เคยเกิดขึ้น เปรียบเทียบประสบการณ์ ฝึกตั้งคำถาม–ตอบเกี่ยวกับประสบการณ์"
+          "Grammar: Present Perfect (core structure & usage)",
+          "พูดเกี่ยวกับประสบการณ์ ความสำเร็จ และเป้าหมายในชีวิตอย่างเป็นระบบ",
+          "ฝึกเล่าเรื่อง + ตั้งคำถาม–ตอบ + ขยายประโยคให้เป็นธรรมชาติ"
         ]
       },
       {
-        "hour": "Unit",
-        "title": "Future Tense — Plan Your Future",
+        "hour": "2nd hour",
+        "title": "What Can AI Do?",
         "bullets": [
-          "Focus: will / going to / present continuous (future meaning)",
-          "Content: Life plans, Career & study goals, Future expectations",
-          "Skills: พูดถึงแผนในอนาคต แสดงความตั้งใจและความหวัง ฝึกตอบคำถามเกี่ยวกับอนาคต"
+          "Advanced Vocabulary: AI & technology",
+          "ฝึกวิเคราะห์บทบาทของ AI",
+          "แยก Opinion vs Facts และฝึกอธิบายเหตุผล"
         ]
       },
       {
-        "hour": "Topic",
-        "title": "FESTIVAL (เทศกาล)",
+        "hour": "3rd hour",
+        "title": "Generation Z",
         "bullets": [
-          "Vocabulary เกี่ยวกับเทศกาล",
-          "การแสดงความคิดเห็นอย่างสุภาพและชัดเจน",
-          "ฝึกสร้างประโยคจากสถานการณ์จริง"
+          "อภิปรายลักษณะเฉพาะของ Gen Z",
+          "พัฒนาทักษะการแสดงความคิดเห็นและการอธิบายเชิงวิเคราะห์",
+          "ฝึกยกตัวอย่าง สนับสนุนมุมมอง และโต้แย้งอย่างสุภาพ"
         ]
       },
       {
-        "hour": "Topic",
-        "title": "SONGS & MUSIC (เพลงและดนตรี)",
+        "hour": "4th hour",
+        "title": "World Trends & Festivals",
         "bullets": [
-          "Vocabulary",
-          "แสดงความเห็นและความชอบ",
-          "ฝึกการสนทนา (Making conversation)"
+          "Vocabulary: world trends + festivals",
+          "เปรียบเทียบวัฒนธรรมตะวันออก–ตะวันตก",
+          "ฝึกพูดเชิงเปรียบเทียบ + ใช้ linking words ให้ลื่นไหล"
         ]
       },
       {
-        "hour": "Topic",
-        "title": "IF CLAUSE (ประโยคเงื่อนไข)",
-        "bullets": ["Grammar: If Clause", "ฝึกแต่งประโยค และนำไปใช้ในบทสนทนา"]
-      },
-      {
-        "hour": "Topic",
-        "title": "STAY HEALTHY (สุขภาพที่ดี)",
+        "hour": "5th hour",
+        "title": "Social Media Influence (Debate Session)",
         "bullets": [
-          "Vocabulary เกี่ยวกับสุขภาพ",
-          "แสดงความเห็นและให้คำแนะนำ",
-          "ฝึกสร้างประโยคอย่างเป็นธรรมชาติ"
+          "Debate practice: reasoning, rebuttal, supporting points",
+          "ฝึกการตั้งเหตุผล การโต้แย้ง และการสนับสนุนความคิดเห็น",
+          "จัดโครงสร้างคำพูดให้ชัด: claim → reason → example → conclusion"
         ]
       },
       {
-        "hour": "Topic",
-        "title": "NATURAL HAZARDS (ภัยธรรมชาติ)",
+        "hour": "6th hour",
+        "title": "If-Clause (Conditionals)",
         "bullets": [
-          "Vocabulary",
-          "การแสดงความคิดเห็นอย่างสุภาพ",
-          "ฝึกสร้างประโยคและอธิบายเหตุการณ์"
+          "Grammar: Conditional sentences",
+          "ฝึกใช้ภาษาเชิงสมมติ (Hypothetical situations)",
+          "แต่งประโยคและนำไปใช้ในบทสนทนา / discussion"
+        ]
+      },
+      {
+        "hour": "7th hour",
+        "title": "Urbanization & Smart City",
+        "bullets": [
+          "Vocabulary: society + technology + cities",
+          "วิเคราะห์ประเด็นการพัฒนาเมืองสมัยใหม่",
+          "ฝึกอธิบายข้อดี-ข้อเสีย และเสนอแนวทางแก้ปัญหา"
+        ]
+      },
+      {
+        "hour": "8th hour",
+        "title": "Natural Hazards",
+        "bullets": [
+          "Vocabulary: natural hazards",
+          "ฝึกพูดเรื่องการเตรียมตัวและการป้องกัน",
+          "อธิบายเหตุการณ์ สาเหตุ ผลกระทบ และแนวทางรับมือ"
+        ]
+      },
+      {
+        "hour": "9th hour",
+        "title": "Critical Discussion Practice",
+        "bullets": [
+          "ฝึกอภิปรายหัวข้อเชิงสังคมโดยใช้เหตุผล",
+          "ใช้โครงสร้างภาษาให้ถูกต้องและเป็นมืออาชีพ",
+          "เพิ่มความคล่อง + ความมั่นใจในการพูดต่อเนื่อง"
+        ]
+      },
+      {
+        "hour": "10th hour",
+        "title": "Recap",
+        "bullets": [
+          "ทบทวน Grammar และ Vocabulary ทั้งหมด",
+          "ฝึก Discussion แบบต่อเนื่อง (long-form speaking)",
+          "สรุปจุดแข็ง/จุดที่ควรพัฒนา เพื่อเตรียมสู่ B2"
         ]
       }
     ],

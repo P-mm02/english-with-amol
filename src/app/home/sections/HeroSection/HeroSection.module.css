@@ -264,6 +264,7 @@
   list-style: none;
   display: grid;
   gap: 0.55rem;
+  white-space: pre-line;
 }
 
 .credLi {
